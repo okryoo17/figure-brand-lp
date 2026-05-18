@@ -1,0 +1,142 @@
+{
+  "nav": {
+    "manifesto": "Manifesto",
+    "characters": "Characters",
+    "sports": "Sports",
+    "tech": "Tech",
+    "sizes": "Sizes",
+    "signup": "Sign up"
+  },
+  "hero": {
+    "label": "BRAND_NAME / VOL.01 / SS26",
+    "title1": "Athletes,",
+    "title2": "Articulated.",
+    "lede": "A new collectible for the riders, runners, and dreamers. Posable practice tools that live in your bag, on your desk, and in your kit. Snowboard first. Every sport next.",
+    "ctaPrimary": "Get the drop alert",
+    "ctaSecondary": "Read the manifesto",
+    "tagBuild": "BUILD No. 0001",
+    "tagMech": "FLEX-JOINT MECH. / 14 PTS"
+  },
+  "marquee": {
+    "items": "POSABLE / CARRYABLE / COLLECTIBLE / POSABLE / CARRYABLE / COLLECTIBLE / "
+  },
+  "manifesto": {
+    "index": "01",
+    "label": "MANIFESTO",
+    "kicker": "We are not making toys.",
+    "title": "We are making the figures athletes wished they had as kids.",
+    "body1": "Fifteen years ago, two snowboarders in Bergen, Norway built articulated figures out of cardboard and duct tape to study tricks they couldn't yet land. They turned it into a company called Tech Rider, made a few hundred figures for Terje, Tadashi, Travis, and Helgason, and then disappeared in 2011.",
+    "body2": "We are not bringing them back. We are taking what they got right — the obsessive, posable, athlete-rendered figure — and giving it the cultural weight it always deserved. Original characters. Multi-sport. Built to carry, built to pose, built to collect.",
+    "body3": "For the kid who taped sequences on the wall. For the rider who studies frames before they sleep. For everyone who knows that movement is a language."
+  },
+  "characters": {
+    "index": "02",
+    "label": "CHARACTERS / WAVE I",
+    "kicker": "Archetypes, not celebrities.",
+    "title": "We don't sell signatures. We sell archetypes.",
+    "subtitle": "Each character is the spirit of a discipline — never the likeness of a single athlete. Collect the series; rotate the kit; pose the moment.",
+    "cards": {
+      "powder": {
+        "name": "The Powder Hunter",
+        "discipline": "Backcountry / Deep snow",
+        "tagline": "Lives where the lift line ends."
+      },
+      "park": {
+        "name": "The Park Rat",
+        "discipline": "Freestyle / Park",
+        "tagline": "Switch in, switch out, no flat ground."
+      },
+      "halfpipe": {
+        "name": "The Halfpipe Specialist",
+        "discipline": "Halfpipe / Olympics",
+        "tagline": "Wall to wall is a whole language."
+      },
+      "purist": {
+        "name": "The Backcountry Purist",
+        "discipline": "Splitboard / Touring",
+        "tagline": "Earns every line, leaves no trace."
+      }
+    }
+  },
+  "sports": {
+    "index": "03",
+    "label": "ROADMAP",
+    "kicker": "Snowboard first. Every sport next.",
+    "title": "One brand. Every discipline that has a culture.",
+    "subtitle": "The mechanism is universal. The cultures are infinite. We start where the founders breathe — and walk into every sport that has a tribe.",
+    "phases": {
+      "now": "NOW — SS26",
+      "next": "NEXT — FW26",
+      "soon": "SOON — 2027",
+      "later": "LATER — 2028+"
+    },
+    "sports": {
+      "snowboard": "Snowboard",
+      "skate": "Skate",
+      "surf": "Surf",
+      "golf": "Golf",
+      "baseball": "Baseball",
+      "soccer": "Soccer",
+      "tennis": "Tennis",
+      "ski": "Ski"
+    }
+  },
+  "tech": {
+    "index": "04",
+    "label": "TECHNOLOGY",
+    "kicker": "Self-standing. Truly posable.",
+    "title": "Fourteen articulated joints. A tendon at every knee. Stands like it means it.",
+    "body": "Each figure is engineered around a fully articulated armature with elastic tension at the knees — a 1990s Norwegian invention, now public domain, refined for 2026. Cloth costumes, real boards, sculpted heads, 10-15 stable poses per figure.",
+    "specs": {
+      "joints": "Articulated joints",
+      "poses": "Stable poses",
+      "scale": "1:6 scale",
+      "height": "Main figure",
+      "mini": "Mini charm"
+    },
+    "values": {
+      "jointsVal": "14",
+      "posesVal": "10-15",
+      "scaleVal": "1:6",
+      "heightVal": "12-13 cm",
+      "miniVal": "5-7 cm"
+    }
+  },
+  "sizes": {
+    "index": "05",
+    "label": "TWO SCALES",
+    "kicker": "One character. Two sizes. Three jobs.",
+    "title": "The display piece, and the one that lives in your bag.",
+    "main": {
+      "name": "MAIN FIGURE",
+      "height": "12-13 cm",
+      "price": "USD 60 / JPY 9,800",
+      "for": "Practice. Display. Study the form."
+    },
+    "mini": {
+      "name": "MINI CHARM",
+      "height": "5-7 cm",
+      "price": "USD 22 / JPY 3,500",
+      "for": "Bag. Desk. Pocket. Always with you."
+    }
+  },
+  "signup": {
+    "index": "06",
+    "label": "PRE-LAUNCH",
+    "kicker": "First wave drops 2026.",
+    "title": "Get the drop alert.",
+    "subtitle": "First wave is limited and numbered. Sign up to get the launch link before it goes public — and the founders' letter, just for you.",
+    "placeholder": "Your email",
+    "cta": "Sign me up",
+    "fine": "We email twice before launch and never share your address."
+  },
+  "footer": {
+    "tagline": "Athletes, Articulated.",
+    "company": "Circular House Inc",
+    "address": "Tokyo, Japan",
+    "legal": "© 2026 Circular House Inc. All articulations reserved.",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "press": "Press"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "nav": {
+    "manifesto": "マニフェスト",
+    "characters": "キャラクター",
+    "sports": "競技",
+    "tech": "技術",
+    "sizes": "サイズ",
+    "signup": "登録"
+  },
+  "hero": {
+    "label": "BRAND_NAME / VOL.01 / SS26",
+    "title1": "アスリートを、",
+    "title2": "可動させる。",
+    "lede": "ライダー、ランナー、夢を見るすべての人へ。バッグの中で、机の上で、キットの脇で生きる、ポーズが取れる練習ツール。スノーボードから始まり、すべての競技へ。",
+    "ctaPrimary": "発売通知を受け取る",
+    "ctaSecondary": "マニフェストを読む",
+    "tagBuild": "BUILD No. 0001",
+    "tagMech": "FLEX-JOINT MECH. / 14 PTS"
+  },
+  "marquee": {
+    "items": "POSABLE ／ CARRYABLE ／ COLLECTIBLE ／ POSABLE ／ CARRYABLE ／ COLLECTIBLE ／ "
+  },
+  "manifesto": {
+    "index": "01",
+    "label": "MANIFESTO",
+    "kicker": "私たちは、玩具を作っているのではない。",
+    "title": "アスリートが子供の頃に欲しかったフィギュアを、作る。",
+    "body1": "15年前、ノルウェー・ベルゲンに住む2人のスノーボーダーが、まだ降りられないトリックを研究するために、段ボールとダクトテープで可動式フィギュアを自作した。彼らはそれを Tech Rider という会社にして、Terje、Tadashi、Travis、Helgason の数百体を作り、そして2011年に消えた。",
+    "body2": "私たちは彼らを蘇らせるのではない。彼らが正しかったこと——執着的に作り込まれた、ポーズが取れる、アスリートを宿したフィギュア——を引き継いで、それにふさわしい文化的重みを与える。オリジナルキャラクター。多競技。持ち運ぶために、ポーズを取るために、集めるために作る。",
+    "body3": "壁にコマ送りを貼った子供のために。寝る前にフレームを研究するライダーのために。そして「動きはひとつの言語だ」と知っているすべての人のために。"
+  },
+  "characters": {
+    "index": "02",
+    "label": "CHARACTERS / WAVE I",
+    "kicker": "セレブではなく、アーキタイプを。",
+    "title": "私たちが売るのはシグネチャーではない。アーキタイプだ。",
+    "subtitle": "各キャラクターは、一人のアスリートの似姿ではなく、ひとつの競技の精神を宿している。シリーズで集める、キットを着せ替える、瞬間を再現する。",
+    "cards": {
+      "powder": {
+        "name": "ザ・パウダーハンター",
+        "discipline": "バックカントリー／ディープスノー",
+        "tagline": "リフトの先で生きる。"
+      },
+      "park": {
+        "name": "ザ・パークラット",
+        "discipline": "フリースタイル／パーク",
+        "tagline": "スイッチイン、スイッチアウト、フラットなし。"
+      },
+      "halfpipe": {
+        "name": "ザ・ハーフパイプ・スペシャリスト",
+        "discipline": "ハーフパイプ／オリンピック",
+        "tagline": "壁から壁、それがひとつの言語。"
+      },
+      "purist": {
+        "name": "ザ・バックカントリー・ピューリスト",
+        "discipline": "スプリットボード／ツーリング",
+        "tagline": "1本ごとに地に足。痕跡は残さない。"
+      }
+    }
+  },
+  "sports": {
+    "index": "03",
+    "label": "ROADMAP",
+    "kicker": "スノーボードから始まる。すべての競技へ。",
+    "title": "ひとつのブランド。文化があるすべての競技。",
+    "subtitle": "機構は普遍。文化は無限。創業者たちが息をする場所から始めて、トライブのあるすべての競技に歩いていく。",
+    "phases": {
+      "now": "NOW — SS26",
+      "next": "NEXT — FW26",
+      "soon": "SOON — 2027",
+      "later": "LATER — 2028+"
+    },
+    "sports": {
+      "snowboard": "スノーボード",
+      "skate": "スケート",
+      "surf": "サーフ",
+      "golf": "ゴルフ",
+      "baseball": "野球",
+      "soccer": "サッカー",
+      "tennis": "テニス",
+      "ski": "スキー"
+    }
+  },
+  "tech": {
+    "index": "04",
+    "label": "TECHNOLOGY",
+    "kicker": "自立する。本物のポーズが取れる。",
+    "title": "14の関節。膝には人工腱。本気で立つ。",
+    "body": "各フィギュアは、膝裏に弾性張力を持つ完全可動式アーマチュアで設計されている——1990年代のノルウェーで生まれた発明、現在はパブリックドメイン、2026年の規格で再構築した。布製コスチューム、本物のボード、彫り込まれた頭部、1体につき10〜15の安定ポーズ。",
+    "specs": {
+      "joints": "可動関節",
+      "poses": "安定ポーズ",
+      "scale": "スケール",
+      "height": "メインフィギュア",
+      "mini": "ミニチャーム"
+    },
+    "values": {
+      "jointsVal": "14",
+      "posesVal": "10-15",
+      "scaleVal": "1:6",
+      "heightVal": "12-13 cm",
+      "miniVal": "5-7 cm"
+    }
+  },
+  "sizes": {
+    "index": "05",
+    "label": "TWO SCALES",
+    "kicker": "ひとつのキャラ。二つのサイズ。三つの役割。",
+    "title": "飾るための一体と、バッグの中で生きる一体。",
+    "main": {
+      "name": "メインフィギュア",
+      "height": "12-13 cm",
+      "price": "JPY 9,800 / USD 60",
+      "for": "練習。ディスプレイ。フォームを学ぶ。"
+    },
+    "mini": {
+      "name": "ミニチャーム",
+      "height": "5-7 cm",
+      "price": "JPY 3,500 / USD 22",
+      "for": "バッグに、机に、ポケットに。いつも一緒に。"
+    }
+  },
+  "signup": {
+    "index": "06",
+    "label": "PRE-LAUNCH",
+    "kicker": "第1弾は2026年ドロップ。",
+    "title": "発売通知を受け取る。",
+    "subtitle": "第1弾は限定生産、シリアル番号入り。一般公開前にローンチリンクが届きます——創業者からの手紙付きで、あなただけに。",
+    "placeholder": "メールアドレス",
+    "cta": "登録する",
+    "fine": "ローンチ前に2通だけお送りします。アドレスは絶対に共有しません。"
+  },
+  "footer": {
+    "tagline": "アスリートを、可動させる。",
+    "company": "Circular House Inc",
+    "address": "東京, 日本",
+    "legal": "© 2026 Circular House Inc. All articulations reserved.",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "press": "Press"
+  }
+}
