@@ -72,7 +72,7 @@ export function Sizes() {
               {t("kicker")}
             </p>
             <h2
-              className={`leading-[1.04] tracking-[-0.025em] text-balance ${
+              className={`leading-[1.04] tracking-[-0.025em] whitespace-pre-line ${
                 isJa
                   ? "font-jp font-extrabold text-[7vw] md:text-[4.5vw] lg:text-[3.2vw]"
                   : "font-display text-[10vw] md:text-[6vw] lg:text-[4vw] italic"
