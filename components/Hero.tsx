@@ -15,7 +15,7 @@ export function Hero() {
         {t("label")}
       </div>
       <div className="absolute right-6 top-1/2 -translate-y-1/2 vert-label font-mono text-[10px] text-paper/40 hidden lg:block">
-        FIG. A-01 / TOKYO ⇄ BERGEN
+        FIG. A-01 / SAITAMA ⇄ U.S.
       </div>
 
       {/* Orbital decoration */}

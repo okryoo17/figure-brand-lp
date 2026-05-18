@@ -167,7 +167,7 @@ export default function LaunchPage() {
           <Link href="/" className="hover:text-paper transition-colors">
             {t("backLink")}
           </Link>
-          <span>BUILD No. 0001 / FIG. A-01 / TOKYO ⇄ BERGEN</span>
+          <span>BUILD No. 0001 / FIG. A-01 / SAITAMA ⇄ U.S.</span>
         </div>
       </div>
     </main>

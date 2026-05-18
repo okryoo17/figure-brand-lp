@@ -12,7 +12,7 @@ export function Footer() {
         <div className="grid lg:grid-cols-12 gap-10">
           <div className="lg:col-span-7">
             <p
-              className={`leading-[0.9] tracking-[-0.03em] ${
+              className={`leading-[0.95] tracking-[-0.03em] whitespace-pre-line ${
                 isJa
                   ? "font-jp font-extrabold text-[12vw] md:text-[8vw] lg:text-[6vw]"
                   : "font-display italic text-[16vw] md:text-[10vw] lg:text-[7.5vw]"
@@ -60,7 +60,7 @@ export function Footer() {
 
         <div className="mt-16 lg:mt-24 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pt-6 border-t border-paper/10 font-mono text-[10px] tracking-[0.25em] uppercase text-paper/45">
           <span>{t("legal")}</span>
-          <span>BUILD No. 0001 / FIG. A-01 / TOKYO ⇄ BERGEN</span>
+          <span>BUILD No. 0001 / FIG. A-01 / SAITAMA ⇄ U.S.</span>
         </div>
       </div>
     </footer>

@@ -37,7 +37,7 @@ export function Press() {
 
           <div className="lg:col-span-5 lg:pl-10 flex flex-col gap-3">
             <a
-              href="mailto:press@circularhouse.example"
+              href="mailto:okryoo17@gmail.com?subject=VIMO%20Press%20%2F%20Partnerships"
               className="group flex items-center justify-between bg-volt text-ink rounded-full px-6 py-5 hover:bg-paper transition-colors"
             >
               <span className="font-mono text-[11px] tracking-[0.2em] uppercase">
@@ -46,22 +46,13 @@ export function Press() {
               <span className="group-hover:translate-x-1 transition-transform text-lg">→</span>
             </a>
             <a
-              href="#"
+              href="mailto:okryoo17@gmail.com?subject=VIMO%20Press%20Kit%20Request"
               className="group flex items-center justify-between border border-paper/30 rounded-full px-6 py-5 hover:border-paper hover:bg-paper hover:text-ink transition-all"
             >
               <span className="font-mono text-[11px] tracking-[0.2em] uppercase">
                 {t("ctaKit")}
               </span>
               <span className="group-hover:translate-x-1 transition-transform text-lg">↓</span>
-            </a>
-            <a
-              href="#"
-              className="group flex items-center justify-between border border-paper/15 rounded-full px-6 py-5 hover:border-paper/40 transition-colors"
-            >
-              <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-paper/70 group-hover:text-paper">
-                {t("ctaLogos")}
-              </span>
-              <span className="text-paper/50 group-hover:text-paper transition-colors text-lg">↗</span>
             </a>
           </div>
         </motion.div>
