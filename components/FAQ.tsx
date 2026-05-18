@@ -12,11 +12,11 @@ export function FAQ() {
   const [open, setOpen] = useState<string | null>(null);
 
   return (
-    <section id="faq" className="relative py-28 lg:py-36 overflow-hidden bg-paper text-ink">
+    <section id="faq" className="relative py-28 lg:py-36 overflow-hidden">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
-        <div className="grid lg:grid-cols-12 gap-8 mb-12 lg:mb-16">
-          <div className="lg:col-span-4">
-            <div className="font-mono text-[11px] tracking-[0.3em] text-flare mb-6">
+        <div className="grid lg:grid-cols-12 gap-8 mb-16 lg:mb-20 items-end">
+          <div className="lg:col-span-7">
+            <div className="font-mono text-[11px] tracking-[0.3em] text-volt mb-6">
               ━━━ {t("label")}
             </div>
             <h2
@@ -29,39 +29,43 @@ export function FAQ() {
               {t("title")}
             </h2>
           </div>
-          <div className="lg:col-span-8 lg:pt-2">
-            <p className={`max-w-2xl text-[15px] leading-relaxed text-ink/70 ${isJa ? "font-jp" : ""}`}>
+          <div className="lg:col-span-5 lg:pl-10 lg:justify-self-end">
+            <p className={`max-w-md text-[15px] leading-relaxed text-paper/70 ${isJa ? "font-jp" : ""}`}>
               {t("subtitle")}
             </p>
           </div>
         </div>
 
-        <div className="lg:col-span-8 max-w-4xl mx-auto border-t border-ink/15">
-          {FAQS.map((slug) => {
+        <div className="max-w-5xl">
+          {FAQS.map((slug, idx) => {
             const isOpen = open === slug;
             return (
-              <div key={slug} className="border-b border-ink/15">
+              <div
+                key={slug}
+                className={`border-t border-paper/12 ${
+                  idx === FAQS.length - 1 ? "border-b" : ""
+                } ${isOpen ? "bg-paper/[0.02]" : ""} transition-colors`}
+              >
                 <button
                   onClick={() => setOpen(isOpen ? null : slug)}
-                  className="w-full flex items-start gap-6 py-7 lg:py-9 text-left group"
+                  className="w-full grid grid-cols-[auto_1fr_auto] items-start gap-6 lg:gap-10 py-7 lg:py-8 text-left group"
                 >
-                  <span className="font-mono text-[10px] tracking-[0.3em] text-flare pt-2 shrink-0">
-                    {String(FAQS.indexOf(slug) + 1).padStart(2, "0")}
+                  <span className="font-mono text-[11px] tracking-[0.3em] text-paper/35 pt-3 shrink-0 w-6">
+                    {String(idx + 1).padStart(2, "0")}
                   </span>
                   <span
-                    className={`flex-1 leading-tight tracking-tight group-hover:text-flare transition-colors ${
-                      isJa
-                        ? "font-jp font-bold text-xl lg:text-2xl"
-                        : "font-display italic text-2xl lg:text-[28px]"
-                    }`}
+                    className={`leading-[1.2] tracking-tight transition-colors ${
+                      isOpen ? "text-paper" : "text-paper/85 group-hover:text-paper"
+                    } ${isJa ? "font-jp font-semibold text-xl lg:text-[26px]" : "font-display italic text-2xl lg:text-[30px]"}`}
                   >
                     {t(`items.${slug}.q`)}
                   </span>
                   <span
-                    className={`shrink-0 text-3xl leading-none transition-transform duration-300 ${
-                      isOpen ? "rotate-45" : ""
+                    className={`shrink-0 size-9 rounded-full border flex items-center justify-center text-[18px] leading-none transition-all duration-300 ${
+                      isOpen
+                        ? "bg-volt text-ink border-volt rotate-45"
+                        : "border-paper/25 text-paper/55 group-hover:border-volt group-hover:text-volt"
                     }`}
-                    style={{ color: "#FF5C00" }}
                   >
                     +
                   </span>
@@ -75,11 +79,13 @@ export function FAQ() {
                       transition={{ duration: 0.35, ease: [0.2, 0.8, 0.2, 1] }}
                       className="overflow-hidden"
                     >
-                      <p
-                        className={`pl-[60px] pr-12 pb-7 max-w-3xl text-[15px] leading-relaxed text-ink/75 ${isJa ? "font-jp" : ""}`}
-                      >
-                        {t(`items.${slug}.a`)}
-                      </p>
+                      <div className="pl-12 lg:pl-16 pr-16 pb-9">
+                        <p
+                          className={`max-w-3xl text-[15px] lg:text-[16px] leading-relaxed text-paper/70 ${isJa ? "font-jp" : ""}`}
+                        >
+                          {t(`items.${slug}.a`)}
+                        </p>
+                      </div>
                     </motion.div>
                   )}
                 </AnimatePresence>

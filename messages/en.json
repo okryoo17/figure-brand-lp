@@ -25,8 +25,8 @@
     "label": "MANIFESTO",
     "kicker": "We are not making toys.",
     "title": "We are making the figures athletes wished they had as kids.",
-    "body1": "This brand started in a Tokyo guesthouse. Two co-founders — one running a snowboard guesthouse network in Japan, the other parenting two competing junior riders in the US — kept noticing the same gap. Their riders wanted something real to study with, something to carry, something to collect.",
-    "body2": "Not a screen. Not a textbook. A real, articulated, beautifully made piece that lived in their world. We are building it now — posable practice tools that are also collectibles, original characters that are also archetypes. Snowboard first. Every sport next.",
+    "body1": "This brand started between two snowboard cultures. One co-founder runs a snowboard guesthouse network out of Saitama, Japan — hosting riders touring the country. The other parents two competing junior snowboarders in the US. Both kept noticing the same gap. Their riders wanted something real to study with, something to carry, something to collect.",
+    "body2": "Not a screen. Not a textbook. A real, articulated, beautifully made piece that lived in their world. We are building it now — posable practice tools that are also collectibles, original characters that are also archetypes. One day, made to your face, your height, your kit. Snowboard first. Every sport next.",
     "body3": "For the kid who taped sequences on the wall. For the rider who studies frames before they sleep. For everyone who knows that movement is a language."
   },
   "characters": {
@@ -129,11 +129,11 @@
       "label": "JAPAN OPERATIONS",
       "name": "Ryosuke Okamura",
       "role": "Co-founder / Operations",
-      "bio": "Tokyo-based operator running a snowboard guesthouse network and an assistant service for global riders touring Japan. Connected to Quest indoor dome (Saitama) and the Japanese pro snowboard scene through founder Yas Sato.",
+      "bio": "Saitama-based operator running a snowboard guesthouse network and an assistant service for global riders touring Japan. Plugged into the Saitama snowboard community and indoor-dome scene — brings the live feel of working Japanese riders into product development.",
       "bringsLabel": "Brings",
-      "brings": "Japan distribution, indoor-dome testing ground, pro endorsement pipeline.",
+      "brings": "Japan distribution, direct access to working riders, product-test network.",
       "basedLabel": "Based",
-      "based": "Tokyo, Japan"
+      "based": "Saitama, Japan"
     },
     "us": {
       "label": "US OPERATIONS",
@@ -175,9 +175,9 @@
       },
       "pre3": {
         "date": "2026.05.18",
-        "tag": "FIELD",
-        "title": "First field tests at Quest, Saitama.",
-        "excerpt": "Yas Sato welcomes us to Japan's leading indoor snowboard dome to study posability against real-world riding."
+        "tag": "BUILD",
+        "title": "Pre-launch site goes live.",
+        "excerpt": "Brand HP, pre-launch teaser, and a multilingual concierge chat all up at vimo-co.vercel.app while we wait on factory quotes."
       }
     }
   },
