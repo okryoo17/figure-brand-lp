@@ -25,7 +25,7 @@ export function Nav() {
     >
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10 h-16 flex items-center justify-between font-mono text-[11px] tracking-[0.2em] uppercase">
         <a href="#" className="font-display italic text-[22px] tracking-tight normal-case lowercase">
-          BRAND_NAME
+          vimo
           <span className="ml-2 text-volt">●</span>
         </a>
 

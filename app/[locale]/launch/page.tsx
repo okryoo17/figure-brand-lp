@@ -35,7 +35,7 @@ export default function LaunchPage() {
         {/* Top bar */}
         <div className="flex items-center justify-between font-mono text-[10px] tracking-[0.25em] uppercase text-paper/55">
           <Link href="/" className="font-display italic text-[20px] tracking-tight normal-case lowercase text-paper">
-            BRAND_NAME <span className="text-volt">●</span>
+            vimo <span className="text-volt">●</span>
           </Link>
           <div className="flex items-center gap-4">
             <span className="text-volt">{t("tagStatus")}</span>

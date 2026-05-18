@@ -16,8 +16,14 @@ export function LangSwitcher() {
     const segments = pathname.split("/").filter(Boolean);
     const isPrefixed = routing.locales.includes(segments[0] as (typeof routing.locales)[number]);
     if (isPrefixed) segments.shift();
-    const rest = "/" + segments.join("/");
-    const dest = next === routing.defaultLocale ? rest || "/" : `/${next}${rest}`;
+    const rest = segments.length ? "/" + segments.join("/") : "";
+    // localePrefix: "always" — every path gets a locale prefix
+    const dest = `/${next}${rest}`;
+
+    // Persist user choice so the middleware doesn't auto-redirect on next visit.
+    // next-intl's middleware honors the NEXT_LOCALE cookie.
+    document.cookie = `NEXT_LOCALE=${next}; Path=/; Max-Age=${60 * 60 * 24 * 365}; SameSite=Lax`;
+
     startTransition(() => router.replace(dest));
   };
 

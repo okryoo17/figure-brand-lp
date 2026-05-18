@@ -34,12 +34,12 @@ const jp = Shippori_Mincho_B1({
 });
 
 export const metadata: Metadata = {
-  title: "BRAND_NAME — Athletes, Articulated.",
+  title: "VIMO — Athletes, Articulated.",
   description:
     "A new collectible for the riders, runners, and dreamers. Posable practice tools that live in your bag, on your desk, and in your kit. Snowboard first. Every sport next.",
-  metadataBase: new URL("https://brand-name.com"),
+  metadataBase: new URL("https://figure-brand-lp.vercel.app"),
   openGraph: {
-    title: "BRAND_NAME — Athletes, Articulated.",
+    title: "VIMO — Athletes, Articulated.",
     description:
       "Carryable, posable, collectible. A new athlete-figure brand built for the movement.",
     type: "website",

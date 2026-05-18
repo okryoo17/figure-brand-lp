@@ -13,6 +13,7 @@ import { News } from "../../components/News";
 import { FAQ } from "../../components/FAQ";
 import { Press } from "../../components/Press";
 import { Footer } from "../../components/Footer";
+import { ChatBot } from "../../components/ChatBot";
 
 export default async function HomePage({
   params,
@@ -38,6 +39,7 @@ export default async function HomePage({
       <FAQ />
       <Press />
       <Footer />
+      <ChatBot />
     </main>
   );
 }

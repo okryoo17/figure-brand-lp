@@ -8,7 +8,7 @@
     "signup": "Sign up"
   },
   "hero": {
-    "label": "BRAND_NAME / VOL.01 / SS26",
+    "label": "VIMO / VOL.01 / SS26",
     "title1": "Athletes,",
     "title2": "Articulated.",
     "lede": "A new collectible for the riders, runners, and dreamers. Posable practice tools that live in your bag, on your desk, and in your kit. Snowboard first. Every sport next.",
@@ -25,8 +25,8 @@
     "label": "MANIFESTO",
     "kicker": "We are not making toys.",
     "title": "We are making the figures athletes wished they had as kids.",
-    "body1": "Fifteen years ago, two snowboarders in Bergen, Norway built articulated figures out of cardboard and duct tape to study tricks they couldn't yet land. They turned it into a company called Tech Rider, made a few hundred figures for Terje, Tadashi, Travis, and Helgason, and then disappeared in 2011.",
-    "body2": "We are not bringing them back. We are taking what they got right — the obsessive, posable, athlete-rendered figure — and giving it the cultural weight it always deserved. Original characters. Multi-sport. Built to carry, built to pose, built to collect.",
+    "body1": "This brand started in a Tokyo guesthouse. Two co-founders — one running a snowboard guesthouse network in Japan, the other parenting two competing junior riders in the US — kept noticing the same gap. Their riders wanted something real to study with, something to carry, something to collect.",
+    "body2": "Not a screen. Not a textbook. A real, articulated, beautifully made piece that lived in their world. We are building it now — posable practice tools that are also collectibles, original characters that are also archetypes. Snowboard first. Every sport next.",
     "body3": "For the kid who taped sequences on the wall. For the rider who studies frames before they sleep. For everyone who knows that movement is a language."
   },
   "characters": {
@@ -86,7 +86,7 @@
     "label": "TECHNOLOGY",
     "kicker": "Self-standing. Truly posable.",
     "title": "Fourteen articulated joints. A tendon at every knee. Stands like it means it.",
-    "body": "Each figure is engineered around a fully articulated armature with elastic tension at the knees — a 1990s Norwegian invention, now public domain, refined for 2026. Cloth costumes, real boards, sculpted heads, 10-15 stable poses per figure.",
+    "body": "Each figure is engineered around a fully articulated armature with elastic tension at the knees. Cloth costumes, real boards, sculpted heads, 10-15 stable poses per figure — engineered for study, designed for display.",
     "specs": {
       "joints": "Articulated joints",
       "poses": "Stable poses",
@@ -164,20 +164,20 @@
       "pre1": {
         "date": "2026.05.18",
         "tag": "STUDIO",
-        "title": "The brand begins.",
-        "excerpt": "A Tokyo operator and a US snowboard parent decide to make the figures Tech Rider should have made."
+        "title": "The studio opens in Tokyo.",
+        "excerpt": "A Tokyo-based snowboard operator and a US snowboard parent decide to make the figures their riders kept asking for."
       },
       "pre2": {
         "date": "2026.05.18",
         "tag": "MANUFACTURING",
         "title": "RFQs are out to ten factories.",
-        "excerpt": "China, Vietnam, and Hong Kong — including the OEMs behind Funko, Mighty Jaxx, and Superplastic."
+        "excerpt": "China, Vietnam, and Hong Kong — shortlisted partners include OEMs behind Funko, Mighty Jaxx, and Superplastic."
       },
       "pre3": {
         "date": "2026.05.18",
-        "tag": "ARCHIVE",
-        "title": "We bought the last Tech Rider on Mercari.",
-        "excerpt": "Disassembled, photographed, and shipped to the factories as the quality reference for what we're building."
+        "tag": "FIELD",
+        "title": "First field tests at Quest, Saitama.",
+        "excerpt": "Yas Sato welcomes us to Japan's leading indoor snowboard dome to study posability against real-world riding."
       }
     }
   },
@@ -195,7 +195,7 @@
         "a": "Three channels at launch: our own webstore (worldwide shipping), selected snowboard shops in the US (through our co-founder's network) and Japan (through Quest indoor dome and partner stores), and a numbered Kickstarter pre-order wave for collectors."
       },
       "license": {
-        "q": "Are these signature figures of real athletes like Terje?",
+        "q": "Are these based on real athletes?",
         "a": "No. Every character is an original archetype — \"The Powder Hunter\", \"The Park Rat\", \"The Halfpipe Specialist\", and so on. We sidestep licensing entirely. If a real rider wants to collaborate later, that's a separate, premium drop."
       },
       "moq": {
@@ -249,5 +249,25 @@
     "backLink": "← Read the full manifesto",
     "confirmed": "You're in. Wave I is reserved.",
     "confirmedBody": "We'll write a few days before launch with your number and the link."
+  },
+  "chat": {
+    "greeting": "Hey — I'm the VIMO concierge. Ask me about launch, sizes, shipping, or anything else.",
+    "placeholder": "Type your question…",
+    "send": "Send",
+    "openLabel": "Chat",
+    "closeLabel": "Close",
+    "quickPrompts": {
+      "launch": "When does it launch?",
+      "price": "How much will it cost?",
+      "ship": "Do you ship to my country?",
+      "real": "Are these based on real athletes?"
+    },
+    "answers": {
+      "launch": "Late 2026 for Wave I. Sign up to the drop alert and you'll get the exact date a few days before public.",
+      "price": "Main figure: about USD 60 / JPY 9,800. Mini charm: about USD 22 / JPY 3,500. Same character, two scales.",
+      "ship": "Yes — worldwide. The US and Japan are the primary launch markets, full Europe at the same time, Asia and LatAm from the Kickstarter wave onward.",
+      "real": "Each figure is an original archetype, not a real athlete. The Powder Hunter, the Park Rat, the Halfpipe Specialist… you get the idea. Athlete collaborations may come later as premium drops.",
+      "fallback": "Good question — easiest is to drop us an email at hello@circularhouse.example and we'll get back fast. Or sign up to the drop alert to get the deeper answers in our pre-launch letters."
+    }
   }
 }
