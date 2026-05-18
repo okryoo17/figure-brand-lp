@@ -7,7 +7,11 @@ import { Characters } from "../../components/Characters";
 import { Sports } from "../../components/Sports";
 import { Technology } from "../../components/Technology";
 import { Sizes } from "../../components/Sizes";
+import { Founders } from "../../components/Founders";
 import { Signup } from "../../components/Signup";
+import { News } from "../../components/News";
+import { FAQ } from "../../components/FAQ";
+import { Press } from "../../components/Press";
 import { Footer } from "../../components/Footer";
 
 export default async function HomePage({
@@ -28,7 +32,11 @@ export default async function HomePage({
       <Sports />
       <Technology />
       <Sizes />
+      <Founders />
       <Signup />
+      <News />
+      <FAQ />
+      <Press />
       <Footer />
     </main>
   );

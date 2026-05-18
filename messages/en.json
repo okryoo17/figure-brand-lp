@@ -120,8 +120,34 @@
       "for": "Bag. Desk. Pocket. Always with you."
     }
   },
-  "signup": {
+  "founders": {
     "index": "06",
+    "label": "FOUNDERS",
+    "kicker": "Two riders, two coasts, one figure.",
+    "title": "Built by a Tokyo operator and a US snowboard parent.",
+    "japan": {
+      "label": "JAPAN OPERATIONS",
+      "name": "Ryosuke Okamura",
+      "role": "Co-founder / Operations",
+      "bio": "Tokyo-based operator running a snowboard guesthouse network and an assistant service for global riders touring Japan. Connected to Quest indoor dome (Saitama) and the Japanese pro snowboard scene through founder Yas Sato.",
+      "bringsLabel": "Brings",
+      "brings": "Japan distribution, indoor-dome testing ground, pro endorsement pipeline.",
+      "basedLabel": "Based",
+      "based": "Tokyo, Japan"
+    },
+    "us": {
+      "label": "US OPERATIONS",
+      "name": "Francisco Rodriguez",
+      "role": "Co-founder / Sourcing & US Retail",
+      "bio": "US-based with deep ties to snowboard shops and rider culture. Father of two competing junior snowboarders. Drives sourcing oversight, IP strategy, and US/Europe retail distribution.",
+      "bringsLabel": "Brings",
+      "brings": "US shop network, IP strategy, athlete partnerships, manufacturer relationships.",
+      "basedLabel": "Based",
+      "based": "United States"
+    }
+  },
+  "signup": {
+    "index": "07",
     "label": "PRE-LAUNCH",
     "kicker": "First wave drops 2026.",
     "title": "Get the drop alert.",
@@ -129,6 +155,70 @@
     "placeholder": "Your email",
     "cta": "Sign me up",
     "fine": "We email twice before launch and never share your address."
+  },
+  "news": {
+    "label": "DISPATCH",
+    "title": "Notes from the studio.",
+    "subtitle": "Slow journal. We post when something real happens — never more, never less.",
+    "items": {
+      "pre1": {
+        "date": "2026.05.18",
+        "tag": "STUDIO",
+        "title": "The brand begins.",
+        "excerpt": "A Tokyo operator and a US snowboard parent decide to make the figures Tech Rider should have made."
+      },
+      "pre2": {
+        "date": "2026.05.18",
+        "tag": "MANUFACTURING",
+        "title": "RFQs are out to ten factories.",
+        "excerpt": "China, Vietnam, and Hong Kong — including the OEMs behind Funko, Mighty Jaxx, and Superplastic."
+      },
+      "pre3": {
+        "date": "2026.05.18",
+        "tag": "ARCHIVE",
+        "title": "We bought the last Tech Rider on Mercari.",
+        "excerpt": "Disassembled, photographed, and shipped to the factories as the quality reference for what we're building."
+      }
+    }
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "The questions we kept getting asked.",
+    "subtitle": "Honest answers about a thing that doesn't exist yet.",
+    "items": {
+      "whenLaunch": {
+        "q": "When does the first figure actually ship?",
+        "a": "We're targeting late 2026 for the first wave. Manufacturing quotes are in motion now; once we lock the factory and the character lineup, we'll announce a firm window via the drop alert list. No pretending we know the date yet."
+      },
+      "whereBuy": {
+        "q": "Where will I be able to buy them?",
+        "a": "Three channels at launch: our own webstore (worldwide shipping), selected snowboard shops in the US (through our co-founder's network) and Japan (through Quest indoor dome and partner stores), and a numbered Kickstarter pre-order wave for collectors."
+      },
+      "license": {
+        "q": "Are these signature figures of real athletes like Terje?",
+        "a": "No. Every character is an original archetype — \"The Powder Hunter\", \"The Park Rat\", \"The Halfpipe Specialist\", and so on. We sidestep licensing entirely. If a real rider wants to collaborate later, that's a separate, premium drop."
+      },
+      "moq": {
+        "q": "How many are you making in the first run?",
+        "a": "The first wave will be numbered and limited — likely 2,000 to 3,000 units of the main figure plus a separate run of the mini charm. We'd rather sell out and restock than over-produce and discount."
+      },
+      "minicharm": {
+        "q": "What's the difference between the main figure and the mini charm?",
+        "a": "The main figure (12-13 cm, ~USD 60) is the full posable practice piece with cloth costume, accessories, and 14 articulated joints. The mini charm (5-7 cm, ~USD 22) is a simplified, attachable version designed to live on your bag or desk. Same character, two scales."
+      },
+      "shipping": {
+        "q": "Will you ship internationally?",
+        "a": "Yes — designed worldwide from day one. The US and Japan are the primary launch markets, with full Europe coverage at the same time. Asia and Latin America from the Kickstarter wave onward."
+      }
+    }
+  },
+  "press": {
+    "label": "PRESS / PARTNERSHIPS",
+    "title": "Writing about us? Stocking us? Get in touch.",
+    "body": "We send a quiet press kit before each drop — high-resolution renders, founder bios, brand story, and the technical fact sheet. If you run a shop, run a magazine, or just want to talk: we read every email.",
+    "ctaEmail": "Email the studio",
+    "ctaKit": "Download press kit",
+    "ctaLogos": "Brand logos / colors"
   },
   "footer": {
     "tagline": "Athletes, Articulated.",
@@ -138,5 +228,26 @@
     "instagram": "Instagram",
     "tiktok": "TikTok",
     "press": "Press"
+  },
+  "launch": {
+    "tagSeason": "SS26 / WAVE I",
+    "tagStatus": "PRE-LAUNCH",
+    "title1": "First wave drops.",
+    "title2": "Late 2026.",
+    "lede": "A limited, numbered first run of articulated snowboarder figures. Sign up below to get the launch link, the founders' letter, and a numbered pre-order slot before the public.",
+    "placeholder": "Your email address",
+    "cta": "Reserve my slot",
+    "fine": "Two emails before launch. Then your number is held for 48 hours. We never share your address.",
+    "perks": {
+      "p1Label": "EARLY",
+      "p1Title": "48-hour head start on the public drop.",
+      "p2Label": "NUMBERED",
+      "p2Title": "Hand-numbered piece from the first run.",
+      "p3Label": "LETTER",
+      "p3Title": "Founders' letter in the box, signed."
+    },
+    "backLink": "← Read the full manifesto",
+    "confirmed": "You're in. Wave I is reserved.",
+    "confirmedBody": "We'll write a few days before launch with your number and the link."
   }
 }
