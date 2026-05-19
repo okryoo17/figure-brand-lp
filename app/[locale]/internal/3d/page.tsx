@@ -51,6 +51,16 @@ export default function InternalThreeDPage() {
           surface details, and finishing are to be developed from Franz&apos;s sketch + the
           factory&apos;s sculptor team.
         </p>
+        <div className="mt-6 max-w-3xl border-l-4 border-volt pl-5 py-3 bg-volt/[0.04]">
+          <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-volt mb-2">
+            DIRECTION UPDATE — 2026-05-19 (Franz)
+          </div>
+          <ul className="text-paper/85 text-[14px] leading-relaxed space-y-1.5">
+            <li>· Body material: <strong>SILICONE</strong> (was: PVC + ABS hybrid) — softer, LABUBU-like tactile feel</li>
+            <li>· Joint construction: per Franz reference image (to be incorporated)</li>
+            <li>· Costume fabric varies by sport — snowboard puffer, baseball mesh, golf polo, soccer dry-mesh, surf rashguard. Tactile differentiation is part of brand experience.</li>
+          </ul>
+        </div>
       </section>
 
       <section className="mx-auto max-w-[1280px] px-6 lg:px-10 grid lg:grid-cols-2 gap-8">
@@ -93,6 +103,8 @@ export default function InternalThreeDPage() {
               <Spec k="Snowboard L × W × T" v="140 × 35 × 6 mm" />
               <Spec k="Goggles W × H" v="17 × 6 mm" />
               <Spec k="Articulation" v="14 joints, independent" />
+              <Spec k="Body material" v="silicone (per Franz 2026-05-19)" />
+              <Spec k="Costume fabric" v="per-sport tactile (snowboard: puffer)" />
             </div>
           </div>
         </div>
@@ -161,9 +173,19 @@ export default function InternalThreeDPage() {
             volume / proportion / joint position cross-check.
           </p>
           <p className="text-paper/85 leading-relaxed mt-4">
+            Got your message on silicone body + LABUBU-style tactile / per-sport
+            uniform fabric. Updated the direction box at the top of this page and
+            the spec sheet (silicone body, per-sport fabric varying). The 3D
+            blockout still represents the geometric volume only — the material
+            shift will be communicated to factories before they finalize the
+            quote.
+          </p>
+          <p className="text-paper/85 leading-relaxed mt-4">
             Please reply with: (a) feedback on overall stance and proportions, (b)
             target head sculpt direction (realistic / stylized / LABUBU-cute), (c)
-            any binding angle or board profile changes vs Tech Rider.
+            any binding angle or board profile changes vs Tech Rider, (d) the joint
+            reference image you mentioned (&quot;basically these&quot;) — could not see it
+            on this end yet, drop it into the WhatsApp thread again or DM me.
           </p>
           <p className="text-paper/85 leading-relaxed mt-4 font-mono text-[12px]">
             — Ryosuke · Tokyo · 2026-05-19
