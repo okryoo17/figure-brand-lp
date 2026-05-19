@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { LangSwitcher } from "./LangSwitcher";
+import { BrandMark } from "./BrandMark";
 
 export function Nav() {
   const t = useTranslations("nav");
@@ -24,9 +25,12 @@ export function Nav() {
       }`}
     >
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10 h-16 flex items-center justify-between font-mono text-[11px] tracking-[0.2em] uppercase">
-        <a href="#" className="font-display italic text-[22px] tracking-tight normal-case lowercase">
-          vimo
-          <span className="ml-2 text-volt">●</span>
+        <a
+          href="#"
+          className="flex items-center gap-2 normal-case text-paper hover:text-volt transition-colors"
+          aria-label="VIMO"
+        >
+          <BrandMark variant="lockup" className="h-9 w-auto" />
         </a>
 
         <div className="hidden md:flex items-center gap-7">
