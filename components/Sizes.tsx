@@ -31,7 +31,7 @@ export function Sizes() {
         {/* Same VIMO figure illustration as Characters section */}
         <div className={`relative ${ratio} my-6`}>
           <Image
-            src="/characters/pose_standing.png"
+            src={slug === "main" ? "/characters/pose_standing.png" : "/characters/pose_charm.png"}
             alt={t(`${slug}.name`)}
             fill
             sizes="(min-width: 1024px) 600px, 100vw"
