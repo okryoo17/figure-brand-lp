@@ -27,7 +27,7 @@ export function Sizes() {
           </span>
         </div>
 
-        {/* Visual silhouette */}
+        {/* Snowboarder doll silhouette */}
         <div className={`relative ${ratio} flex items-end justify-center my-6`}>
           <svg
             viewBox="0 0 200 400"
@@ -36,11 +36,33 @@ export function Sizes() {
             fill={accent === "volt" ? "var(--color-volt)" : "var(--color-flare)"}
             opacity="0.95"
           >
-            <circle cx="100" cy="80" r="30" />
-            <path d="M70 110h60v40H70z" />
-            <path d="M65 150h70v90l-15 30H80l-15-30z" />
-            <path d="M75 270h50v100H75z" />
-            <rect x="40" y="370" width="120" height="14" rx="7" />
+            {/* beanie pompom */}
+            <circle cx="100" cy="42" r="6" />
+            {/* beanie */}
+            <path d="M76 80 Q76 50 100 50 Q124 50 124 80 L124 92 L76 92 Z" />
+            {/* head */}
+            <circle cx="100" cy="100" r="20" />
+            {/* goggles cut-out band */}
+            <rect x="76" y="93" width="48" height="9" rx="2" fill="#0A0A0A" />
+            {/* puffer jacket */}
+            <path d="M72 122 Q100 130 128 122 L138 188 Q100 198 62 188 Z" />
+            {/* left arm — slightly out for riding balance, bent at elbow */}
+            <path d="M70 138 Q44 154 38 188 Q34 210 50 214 Q60 200 60 184 Q72 168 80 158 Z" />
+            {/* right arm */}
+            <path d="M130 138 Q156 154 162 188 Q166 210 150 214 Q140 200 140 184 Q128 168 120 158 Z" />
+            {/* cargo pants — wider hip, tapered to ankle */}
+            <path d="M70 188 L130 188 L134 240 L122 240 L108 268 L92 268 L78 240 L66 240 Z" />
+            {/* bent knees (riding stance) */}
+            <path d="M76 252 Q70 286 76 314 L94 314 Q96 286 96 252 Z" />
+            <path d="M104 252 Q104 286 106 314 L124 314 Q130 286 124 252 Z" />
+            {/* boots */}
+            <rect x="56" y="312" width="42" height="16" rx="4" />
+            <rect x="102" y="312" width="42" height="16" rx="4" />
+            {/* bindings (small mounts on board) */}
+            <rect x="58" y="328" width="38" height="6" rx="2" />
+            <rect x="104" y="328" width="38" height="6" rx="2" />
+            {/* snowboard */}
+            <ellipse cx="100" cy="346" rx="92" ry="9" />
           </svg>
         </div>
 
