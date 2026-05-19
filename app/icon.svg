@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- ink rounded background so the mark reads on both light and dark tabs -->
+  <rect width="64" height="64" rx="12" fill="#0A0A0A"/>
+
+  <!-- paper-white snowboarder doll (simplified for favicon) -->
+  <g fill="#F2EEE5">
+    <!-- beanie pompom -->
+    <circle cx="32" cy="11" r="2.4"/>
+    <!-- beanie -->
+    <path d="M23 20 Q23 13 32 13 Q41 13 41 20 L41 23 L23 23 Z"/>
+    <!-- head -->
+    <circle cx="32" cy="27" r="6"/>
+  </g>
+
+  <!-- volt-green goggle band, full-width across the eyes for instant brand read -->
+  <rect x="24" y="25" width="16" height="3.2" rx="0.8" fill="#C8FF00"/>
+
+  <g fill="#F2EEE5">
+    <!-- puffer jacket -->
+    <path d="M22 33 Q32 35 42 33 L43 47 Q32 49 21 47 Z"/>
+    <!-- legs bent -->
+    <path d="M24 47 Q23 53 25 57 L29 57 Q30 52 29 47 Z"/>
+    <!-- right leg -->
+    <path d="M35 47 Q35 52 36 57 L40 57 Q41 53 40 47 Z"/>
+  </g>
+
+  <!-- volt-green snowboard so the brand color reads even at 16x16 -->
+  <ellipse cx="32" cy="58" rx="22" ry="2.6" fill="#C8FF00"/>
+</svg>
