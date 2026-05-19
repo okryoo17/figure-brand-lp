@@ -69,13 +69,28 @@ export default function InternalThreeDPage() {
       <section className="mx-auto max-w-[1280px] px-6 lg:px-10 grid lg:grid-cols-2 gap-8">
         <div className="bg-paper/[0.03] border border-paper/15 rounded-3xl p-6 lg:p-8">
           <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-volt mb-4">
-            01 · INTERACTIVE 3D — DRAG TO ROTATE
+            01 · INTERACTIVE 3D — COSTUMED & SKELETON
           </div>
-          <div className="h-[560px]">
-            <Figure3D src="/models/vimo_main.glb" alt="VIMO Main figure 1:12" cameraOrbit="20deg 78deg auto" />
+          <div className="grid grid-cols-2 gap-3">
+            <div>
+              <div className="h-[440px]">
+                <Figure3D src="/models/vimo_main.glb" alt="VIMO Main figure costumed" cameraOrbit="20deg 78deg auto" />
+              </div>
+              <div className="font-mono text-[10px] tracking-[0.2em] uppercase text-paper/60 mt-2">
+                COSTUMED — final look
+              </div>
+            </div>
+            <div>
+              <div className="h-[440px]">
+                <Figure3D src="/models/vimo_main_skeleton.glb" alt="VIMO skeleton construction" cameraOrbit="20deg 78deg auto" />
+              </div>
+              <div className="font-mono text-[10px] tracking-[0.2em] uppercase text-paper/60 mt-2">
+                SKELETON — silicone segments + 14 black ball joints
+              </div>
+            </div>
           </div>
           <div className="font-mono text-[9px] tracking-[0.25em] uppercase text-paper/40 mt-3">
-            drag · pinch · scroll-zoom
+            drag · pinch · scroll-zoom · both viewers independent
           </div>
         </div>
 
