@@ -131,6 +131,52 @@ export default function InternalThreeDPage() {
 
       <section className="mx-auto max-w-[1280px] px-6 lg:px-10 py-10">
         <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-volt mb-4">
+          03.4 · CHARACTER SCULPT REFERENCE — what the figure should look like
+        </div>
+        <p className="text-paper/80 max-w-3xl mb-6">
+          Five illustrated views of the same VIMO figure — one neutral standing
+          pose plus the four discipline poses from the main brand page. Use
+          these as the visual brief for head sculpt direction, jacket pattern,
+          glove shape, board graphic styling, and overall proportion. The
+          character is intentionally not photorealistic: stylized but anatomically
+          correct, with a Mezco One:12 / Hot Toys mid-tier finish quality
+          target.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+          {[
+            { src: "/characters/pose_standing.png", label: "STANDING", sub: "neutral reveal" },
+            { src: "/characters/pose_powder.png",   label: "POWDER",   sub: "heel-side carve" },
+            { src: "/characters/pose_park.png",     label: "PARK",     sub: "indy grab air" },
+            { src: "/characters/pose_halfpipe.png", label: "HALFPIPE", sub: "method grab" },
+            { src: "/characters/pose_carver.png",   label: "ALPINE",   sub: "eurocarve" },
+          ].map((p) => (
+            <a key={p.src} href={p.src} target="_blank" rel="noopener" className="block">
+              <img
+                src={p.src}
+                alt={`VIMO character ${p.label}`}
+                className="w-full aspect-square object-contain bg-ink rounded-xl border border-paper/10"
+                loading="lazy"
+              />
+              <div className="mt-2 font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">
+                {p.label}
+              </div>
+              <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-paper/40">
+                {p.sub}
+              </div>
+            </a>
+          ))}
+        </div>
+        <p className="mt-6 text-[13px] text-paper/60 max-w-3xl">
+          The character art is final enough for the sculpting team to start
+          immediately. Treat the outfit, beanie + pompom, electric-green goggles,
+          jacket + cargo silhouette, and glove shape as locked. Minor details
+          (face features, exact jacket panel lines) will be refined together
+          with co-founder Franz during sample review.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-[1280px] px-6 lg:px-10 py-10">
+        <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-volt mb-4">
           03.5 · JOINT REFERENCE — sent by Franz 2026-05-19
         </div>
         <div className="grid lg:grid-cols-2 gap-8 items-start">
