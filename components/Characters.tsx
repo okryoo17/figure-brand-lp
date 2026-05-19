@@ -9,114 +9,129 @@ type ArchetypeKey = (typeof ARCHETYPES)[number];
 
 function Silhouette({ kind }: { kind: ArchetypeKey }) {
   const baseColor = "currentColor";
-  const accent = "#0A0A0A";
+  const dark = "#0A0A0A";
+
+  // Common building blocks for the snowboarder doll, drawn upright in a
+  // 320×360 viewBox. Each archetype wraps the doll in a transform group so
+  // we can pose it (carve, mid-air, method grab, touring) without re-drawing
+  // every body part.
+  const Doll = () => (
+    <g fill={baseColor}>
+      {/* beanie pompom */}
+      <circle cx="160" cy="40" r="6" />
+      {/* beanie */}
+      <path d="M134 80 Q134 48 160 48 Q186 48 186 80 L186 92 L134 92 Z" />
+      {/* head */}
+      <circle cx="160" cy="102" r="22" />
+      {/* goggle band — cut darker */}
+      <rect x="136" y="96" width="48" height="9" rx="2" fill={dark} />
+      {/* puffer jacket */}
+      <path d="M130 124 Q160 132 190 124 L200 192 Q160 202 120 192 Z" />
+      {/* left arm (relaxed at side, default) */}
+      <path d="M128 140 Q108 168 110 200 Q108 218 122 220 Q128 198 132 178 Q138 156 142 144 Z" />
+      {/* right arm */}
+      <path d="M192 140 Q212 168 210 200 Q212 218 198 220 Q192 198 188 178 Q182 156 178 144 Z" />
+      {/* cargo pants — wider hip, taper */}
+      <path d="M130 192 L190 192 L196 246 L184 246 L170 274 L150 274 L136 246 L124 246 Z" />
+      {/* legs — bent knees riding stance */}
+      <path d="M136 258 Q130 292 138 320 L156 320 Q158 290 158 258 Z" />
+      <path d="M162 258 Q162 290 164 320 L182 320 Q190 290 184 258 Z" />
+      {/* boots */}
+      <rect x="118" y="318" width="44" height="14" rx="3" />
+      <rect x="158" y="318" width="44" height="14" rx="3" />
+      {/* bindings */}
+      <rect x="120" y="332" width="40" height="6" rx="2" />
+      <rect x="160" y="332" width="40" height="6" rx="2" />
+      {/* snowboard */}
+      <ellipse cx="160" cy="345" rx="95" ry="9" />
+    </g>
+  );
 
   if (kind === "powder") {
-    // Deep carve, backside, low body
+    // POWDER HUNTER — deep heel-side carve, doll tilted ~25° into the slope
     return (
       <svg viewBox="0 0 320 360" className="w-full h-full">
-        <g fill={baseColor}>
-          {/* Snowboard, tilted on edge */}
-          <path d="M30 280 Q160 220 290 270 L296 290 Q160 245 26 298 Z" />
-          {/* Body — low compressed carve */}
-          {/* Head */}
-          <circle cx="160" cy="100" r="28" />
-          {/* Goggles strip */}
-          <rect x="142" y="92" width="36" height="9" fill={accent} />
-          {/* Torso bent forward */}
-          <path d="M125 132 L195 132 L210 230 L150 245 L120 230 Z" />
-          {/* Front arm reaching down toward board (grab) */}
-          <path d="M198 152 Q235 200 220 250 L208 245 Q220 205 184 165 Z" />
-          {/* Back arm trailing */}
-          <path d="M122 152 Q90 178 100 215 L114 215 Q108 188 132 168 Z" />
-          {/* Front leg bent */}
-          <path d="M150 240 L162 285 L196 280 L184 232 Z" />
-          {/* Back leg deep bend */}
-          <path d="M118 230 L106 285 L138 286 L142 235 Z" />
-          {/* Spray under board */}
+        <g transform="rotate(-22 160 220) translate(0 12)">
+          <Doll />
         </g>
-        <g opacity="0.4" fill={baseColor}>
-          <circle cx="50" cy="295" r="2.5" />
-          <circle cx="64" cy="305" r="3.5" />
-          <circle cx="80" cy="298" r="2" />
-          <circle cx="100" cy="310" r="4" />
-          <circle cx="42" cy="310" r="2" />
+        {/* snow spray under the trailing edge */}
+        <g opacity="0.45" fill={baseColor}>
+          <circle cx="46" cy="312" r="3" />
+          <circle cx="62" cy="324" r="4.5" />
+          <circle cx="84" cy="316" r="2.5" />
+          <circle cx="104" cy="328" r="5" />
+          <circle cx="36" cy="328" r="2.5" />
+          <circle cx="124" cy="320" r="2" />
         </g>
       </svg>
     );
   }
 
   if (kind === "park") {
-    // Mid-air, nose grab, knees tucked
+    // PARK RAT — mid-air, board angled, slight rotation. Show whole doll airborne.
     return (
       <svg viewBox="0 0 320 360" className="w-full h-full">
-        <g fill={baseColor}>
-          {/* Floating board — angled */}
-          <path d="M62 232 Q160 175 270 218 L272 240 Q160 200 60 252 Z" transform="rotate(-12 160 220)" />
-          {/* Head */}
-          <circle cx="155" cy="80" r="26" />
-          {/* Goggles */}
-          <rect x="139" y="73" width="34" height="8" fill={accent} />
-          {/* Torso tucked */}
-          <path d="M122 108 L195 108 L205 200 L145 215 L115 200 Z" />
-          {/* Grab arm reaching down to board nose */}
-          <path d="M195 128 Q240 185 215 232 L200 228 Q220 192 180 138 Z" />
-          {/* Back arm out for balance */}
-          <path d="M120 128 Q78 100 78 132 L88 138 Q92 124 130 144 Z" />
-          {/* Legs tucked tight */}
-          <path d="M150 212 L185 235 L210 222 L188 198 Z" />
-          <path d="M125 208 L94 234 L82 222 L118 200 Z" />
+        <g transform="translate(0 -20) rotate(-15 160 200)">
+          <Doll />
+        </g>
+        {/* takeoff lip dashes */}
+        <g opacity="0.4" fill={baseColor}>
+          <rect x="20" y="340" width="22" height="4" rx="2" />
+          <rect x="52" y="340" width="22" height="4" rx="2" />
+          <rect x="84" y="340" width="22" height="4" rx="2" />
         </g>
       </svg>
     );
   }
 
   if (kind === "halfpipe") {
-    // Method air — sideways, board grab behind back
+    // HALFPIPE — method air, full rotation 65° so the board is overhead.
     return (
       <svg viewBox="0 0 320 360" className="w-full h-full">
-        <g fill={baseColor}>
-          {/* Board behind body, angled up */}
-          <path d="M225 80 L298 65 L300 90 L228 105 Z" transform="rotate(35 264 85)" />
-          {/* Head */}
-          <circle cx="140" cy="120" r="26" />
-          <rect x="124" y="113" width="34" height="8" fill={accent} />
-          {/* Torso arched back */}
-          <path d="M108 148 L172 148 L185 232 L130 248 L100 232 Z" />
-          {/* Back arm gripping board */}
-          <path d="M170 168 Q220 130 240 95 L228 88 Q210 124 156 178 Z" />
-          {/* Front arm out for balance */}
-          <path d="M105 168 Q60 200 50 232 L62 240 Q72 210 116 180 Z" />
-          {/* Legs bent, board pulled up */}
-          <path d="M135 240 L160 296 L200 286 L178 230 Z" />
-          <path d="M105 232 L78 290 L116 296 L130 234 Z" />
+        <g transform="translate(0 -10) rotate(60 160 200)">
+          <Doll />
         </g>
+        {/* halfpipe lip arc beneath */}
+        <path
+          d="M20 340 Q160 290 300 340"
+          stroke={baseColor}
+          strokeWidth="3"
+          fill="none"
+          opacity="0.45"
+        />
       </svg>
     );
   }
 
-  // purist — standing, splitboard on shoulder, touring
+  // PURIST — touring stance, board strapped on back (diagonal), doll standing tall.
   return (
     <svg viewBox="0 0 320 360" className="w-full h-full">
-      <g fill={baseColor}>
-        {/* Splitboard carried on shoulder, diagonal */}
-        <path d="M68 70 L260 22 L266 50 L74 98 Z" />
-        {/* Head */}
-        <circle cx="160" cy="138" r="26" />
-        {/* Beanie line */}
-        <rect x="138" y="118" width="44" height="8" />
-        {/* Torso straight standing */}
-        <path d="M128 165 L196 165 L198 260 L122 260 Z" />
-        {/* Holding-strap arm */}
-        <path d="M192 178 Q210 130 200 88 L186 90 Q196 130 178 178 Z" />
-        {/* Free arm down */}
-        <path d="M126 180 L120 252 L138 252 L142 180 Z" />
-        {/* Legs standing */}
-        <path d="M134 258 L130 340 L155 340 L160 258 Z" />
-        <path d="M164 258 L168 340 L194 340 L194 258 Z" />
-        {/* Snow ground line */}
-        <path d="M40 348 L290 348" stroke={baseColor} strokeWidth="2" fill="none" opacity="0.4" />
+      {/* splitboard slung behind from shoulder to opposite hip */}
+      <g fill={baseColor} opacity="0.9">
+        <path
+          d="M80 40 L240 30 L246 56 L86 66 Z"
+          transform="rotate(28 160 50)"
+        />
       </g>
+      {/* doll standing with legs straight (override knee bends) */}
+      <g fill={baseColor}>
+        <circle cx="160" cy="40" r="6" />
+        <path d="M134 80 Q134 48 160 48 Q186 48 186 80 L186 92 L134 92 Z" />
+        <circle cx="160" cy="102" r="22" />
+        <rect x="136" y="96" width="48" height="9" rx="2" fill={dark} />
+        <path d="M130 124 Q160 132 190 124 L200 198 Q160 206 120 198 Z" />
+        {/* left arm gripping pack strap on chest */}
+        <path d="M132 138 Q120 160 128 188 L142 188 Q140 168 146 148 Z" />
+        {/* right arm hanging down naturally */}
+        <path d="M192 140 Q200 170 196 214 L184 214 Q180 178 178 144 Z" />
+        {/* legs straight standing */}
+        <path d="M134 198 L132 318 L156 318 L158 198 Z" />
+        <path d="M162 198 L164 318 L188 318 L188 198 Z" />
+        <rect x="124" y="316" width="38" height="14" rx="3" />
+        <rect x="158" y="316" width="38" height="14" rx="3" />
+      </g>
+      {/* snow ground line */}
+      <path d="M30 348 L290 348" stroke={baseColor} strokeWidth="2" fill="none" opacity="0.4" />
     </svg>
   );
 }
