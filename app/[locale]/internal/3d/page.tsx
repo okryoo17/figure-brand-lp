@@ -127,6 +127,53 @@ export default function InternalThreeDPage() {
       </section>
 
       <section className="mx-auto max-w-[1280px] px-6 lg:px-10 py-10">
+        <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-volt mb-4">
+          03.5 · JOINT REFERENCE — sent by Franz 2026-05-19
+        </div>
+        <div className="grid lg:grid-cols-2 gap-8 items-start">
+          <a href="/models/joint_reference.jpeg" target="_blank" rel="noopener">
+            <img
+              src="/models/joint_reference.jpeg"
+              alt="Joint reference - Dummy 13 / T-13 style articulated figure"
+              className="w-full rounded-2xl bg-paper/5"
+            />
+          </a>
+          <div>
+            <p className="text-paper/85 leading-relaxed mb-4">
+              The reference Franz shared is a <strong>&ldquo;Dummy 13 / T-13&rdquo;</strong> style
+              3D-printable articulated figure — exposed black ball joints at every
+              articulation point (neck, shoulder, elbow, wrist, waist, hip, knee,
+              ankle), with segmented body panels and interchangeable hand pieces.
+            </p>
+            <p className="text-paper/85 leading-relaxed mb-4">
+              <strong>Design tension to resolve before factory finalizes quote:</strong>
+            </p>
+            <ul className="text-paper/85 leading-relaxed text-[14px] space-y-2 list-disc pl-5">
+              <li>
+                <strong>Visible joints (Dummy 13 look)</strong> — modular, robotic,
+                customizable. But hard to overlay LABUBU-style soft tactile feel.
+              </li>
+              <li>
+                <strong>Hidden joints (Tech Rider FLEXDOLL look)</strong> — cloth
+                costume covers everything, smooth tactile, posable from underneath.
+                Matches the snowboard / per-sport uniform direction.
+              </li>
+              <li>
+                <strong>Hybrid (proposed)</strong> — Dummy 13 joint mechanism
+                internally, fabric uniform on top (covers most joints), face + hands
+                exposed in silicone. Best of both worlds — must confirm with factory
+                if mechanically feasible at our cost target.
+              </li>
+            </ul>
+            <p className="text-paper/85 leading-relaxed mt-4 text-[13px]">
+              Going to ask the OEM team to advise — Weijun &amp; Demeng both have
+              experience with both styles, they will know what works.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-[1280px] px-6 lg:px-10 py-10">
         <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-flare mb-4">
           04 · REFERENCE — Tech Rider FLEXDOLL (predecessor)
         </div>
