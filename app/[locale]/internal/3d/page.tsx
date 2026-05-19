@@ -132,15 +132,34 @@ export default function InternalThreeDPage() {
         <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-volt mb-4">
           03 · DOWNLOAD PACKET
         </div>
+
+        <div className="font-mono text-[9px] tracking-[0.25em] uppercase text-paper/50 mt-2 mb-3">
+          COSTUMED — final look
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
+          <DL href="/models/vimo_main_figure.stl"  label="COSTUMED · STL" sub="binary mesh · ~15 MB · sculpting input" />
+          <DL href="/models/vimo_main_figure.obj"  label="COSTUMED · OBJ" sub="wavefront · ~22 MB · sculpting input" />
+          <DL href="/models/vimo_main.glb"         label="COSTUMED · GLB" sub="web 3D · ~9 MB · viewer asset" />
+        </div>
+
+        <div className="font-mono text-[9px] tracking-[0.25em] uppercase text-paper/50 mt-2 mb-3">
+          SKELETON — silicone segments + 14 black ball joints
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
+          <DL href="/models/vimo_main_skeleton.stl" label="SKELETON · STL" sub="binary mesh · ~9 MB · construction reference" />
+          <DL href="/models/vimo_main_skeleton.obj" label="SKELETON · OBJ" sub="wavefront · ~12 MB · construction reference" />
+          <DL href="/models/vimo_main_skeleton.glb" label="SKELETON · GLB" sub="web 3D · ~6 MB · viewer asset" />
+        </div>
+
+        <div className="font-mono text-[9px] tracking-[0.25em] uppercase text-paper/50 mt-2 mb-3">
+          SPEC + REFERENCE DATA
+        </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          <DL href="/models/vimo_main_figure.stl"   label="STL"            sub="binary mesh · ~2 MB · sculpting input" />
-          <DL href="/models/vimo_main_figure.obj"   label="OBJ"            sub="wavefront · ~3 MB · sculpting input" />
-          <DL href="/models/vimo_main.glb"          label="GLB"            sub="web 3D · ~1 MB · viewer asset" />
           <DL href="/models/vimo_main_dimensions.pdf" label="DIMENSIONS PDF" sub="front + side · all mm" />
           <DL href="/models/vimo_main_dimensions.png" label="DIMENSIONS PNG" sub="raster version" />
-          <DL href="/models/vimo_main_joints.csv"   label="JOINTS CSV"      sub="14 articulation points (x,y,z mm)" />
-          <DL href="/models/dimensions_extracted.md" label="SPEC SHEET"      sub="full body proportion notes" />
-          <DL href="/models/vimo_mini.glb"          label="MINI CHARM GLB"  sub="1:24 · 62 mm · charm version" />
+          <DL href="/models/vimo_main_joints.csv"   label="JOINTS CSV"     sub="14 articulation points (x,y,z mm)" />
+          <DL href="/models/dimensions_extracted.md" label="SPEC SHEET"     sub="full body proportion notes" />
+          <DL href="/models/vimo_mini.glb"          label="MINI CHARM GLB" sub="1:24 · 62 mm · charm version" />
         </div>
       </section>
 
