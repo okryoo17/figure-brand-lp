@@ -44,21 +44,24 @@ export default function InternalThreeDPage() {
 
       <section className="mx-auto max-w-[1280px] px-6 lg:px-10 py-10">
         <p className="text-paper/80 max-w-3xl">
-          This page is for design review with co-founder Franz and for sharing with
-          shortlisted OEM factories. The 3D below is a procedural blockout — it
-          carries the <em>correct dimensions, proportions, and joint positions</em> from
-          the physical Tech Rider sample measured on 2026-05-19. The final character sculpt,
-          surface details, and finishing are to be developed from Franz&apos;s sketch + the
-          factory&apos;s sculptor team.
+          Reference spec sheet for the VIMO Main figure — 1:12 scale, 125 mm
+          total height, 14 articulated joints. Dimensions taken from a physical
+          measurement of the predecessor Tech Rider FLEXDOLL (Norway, c. 2010-2011)
+          on 2026-05-19. The 3D below is a procedural blockout carrying the
+          <em> correct dimensions, proportions, and joint positions</em>; the final
+          character sculpt and surface detailing are to be developed by the
+          factory&apos;s sculpting team from this reference plus the character art
+          (delivered separately).
         </p>
         <div className="mt-6 max-w-3xl border-l-4 border-volt pl-5 py-3 bg-volt/[0.04]">
           <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-volt mb-2">
-            DIRECTION UPDATE — 2026-05-19 (Franz)
+            CONSTRUCTION SPEC
           </div>
           <ul className="text-paper/85 text-[14px] leading-relaxed space-y-1.5">
-            <li>· Body material: <strong>SILICONE</strong> (was: PVC + ABS hybrid)</li>
-            <li>· Joint construction: per Franz reference image — Dummy 13 / T-13 style ball joints (image in section 03.5)</li>
-            <li>· <strong>Real-fabric per-sport uniforms</strong>: snowboard puffer, baseball mesh, golf polo, soccer dry-mesh, surf rashguard. Each sport has a different tactile feel when held — Franz cited the tactile appeal of LABUBU as benchmark for &ldquo;feel matters&rdquo;, not as a styling reference. The execution here is real fabric on the doll, not fur.</li>
+            <li>· <strong>Skeleton</strong>: Dummy 13 / T-13 style ball joints, 14 articulation points (image in §03.5)</li>
+            <li>· <strong>Body surface</strong>: silicone; face and hands exposed for grip/tactile feel</li>
+            <li>· <strong>Costume</strong>: real fabric uniforms varying by sport — snowboard puffer, baseball mesh, golf polo, soccer dry-mesh, surf rashguard. Uniform covers most joints during display, full articulation underneath.</li>
+            <li>· <strong>Self-standing</strong>: knees-bent riding stance (snowboard SKU), FLEXDOLL-style knee mechanism — US6893318B2 patent expired 2022-07-03</li>
           </ul>
         </div>
       </section>
@@ -188,48 +191,6 @@ export default function InternalThreeDPage() {
               />
             </a>
           ))}
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-[1280px] px-6 lg:px-10 py-10">
-        <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-volt mb-4">
-          05 · NOTE TO FRANZ
-        </div>
-        <div className="bg-paper/[0.03] border border-paper/15 rounded-3xl p-6 lg:p-8 max-w-3xl">
-          <p className="text-paper/85 leading-relaxed">
-            Hey Franz —
-          </p>
-          <p className="text-paper/85 leading-relaxed mt-4">
-            The blockout above carries the full Tech Rider dimensions exactly. It is
-            geometry + joint reference only — not the final character. Your sketch
-            will replace the head sculpt, jacket detailing, glove fingers, and board
-            graphics; the factory&apos;s sculptor will refine surface and joint
-            mechanics from there.
-          </p>
-          <p className="text-paper/85 leading-relaxed mt-4">
-            All files in section 03 are the same packet I am sending to Weijun /
-            Demeng / IDEA Animation for quote refinement. The dimensions PDF is the
-            authoritative reference — everyone works off that, the 3D is just for
-            volume / proportion / joint position cross-check.
-          </p>
-          <p className="text-paper/85 leading-relaxed mt-4">
-            Got your message on silicone body + LABUBU-style tactile / per-sport
-            uniform fabric. Updated the direction box at the top of this page and
-            the spec sheet (silicone body, per-sport fabric varying). The 3D
-            blockout still represents the geometric volume only — the material
-            shift will be communicated to factories before they finalize the
-            quote.
-          </p>
-          <p className="text-paper/85 leading-relaxed mt-4">
-            Please reply with: (a) feedback on overall stance and proportions, (b)
-            target head sculpt direction (realistic / stylized / LABUBU-cute), (c)
-            any binding angle or board profile changes vs Tech Rider, (d) the joint
-            reference image you mentioned (&quot;basically these&quot;) — could not see it
-            on this end yet, drop it into the WhatsApp thread again or DM me.
-          </p>
-          <p className="text-paper/85 leading-relaxed mt-4 font-mono text-[12px]">
-            — Ryosuke · Tokyo · 2026-05-19
-          </p>
         </div>
       </section>
 
