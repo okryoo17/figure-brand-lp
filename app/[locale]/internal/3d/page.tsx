@@ -56,9 +56,9 @@ export default function InternalThreeDPage() {
             DIRECTION UPDATE — 2026-05-19 (Franz)
           </div>
           <ul className="text-paper/85 text-[14px] leading-relaxed space-y-1.5">
-            <li>· Body material: <strong>SILICONE</strong> (was: PVC + ABS hybrid) — softer, LABUBU-like tactile feel</li>
-            <li>· Joint construction: per Franz reference image (to be incorporated)</li>
-            <li>· Costume fabric varies by sport — snowboard puffer, baseball mesh, golf polo, soccer dry-mesh, surf rashguard. Tactile differentiation is part of brand experience.</li>
+            <li>· Body material: <strong>SILICONE</strong> (was: PVC + ABS hybrid)</li>
+            <li>· Joint construction: per Franz reference image — Dummy 13 / T-13 style ball joints (image in section 03.5)</li>
+            <li>· <strong>Real-fabric per-sport uniforms</strong>: snowboard puffer, baseball mesh, golf polo, soccer dry-mesh, surf rashguard. Each sport has a different tactile feel when held — Franz cited the tactile appeal of LABUBU as benchmark for &ldquo;feel matters&rdquo;, not as a styling reference. The execution here is real fabric on the doll, not fur.</li>
           </ul>
         </div>
       </section>
@@ -146,29 +146,22 @@ export default function InternalThreeDPage() {
               ankle), with segmented body panels and interchangeable hand pieces.
             </p>
             <p className="text-paper/85 leading-relaxed mb-4">
-              <strong>Design tension to resolve before factory finalizes quote:</strong>
+              <strong>Working assumption</strong>: this Dummy 13 joint mechanism is
+              the <em>structural skeleton</em>, and the per-sport real-fabric uniform
+              (snowboard puffer, baseball mesh, etc.) sits on top — covering most of
+              the joints during display, but allowing full articulation underneath.
+              Face and hands stay exposed in silicone for the tactile face/grip feel.
             </p>
-            <ul className="text-paper/85 leading-relaxed text-[14px] space-y-2 list-disc pl-5">
-              <li>
-                <strong>Visible joints (Dummy 13 look)</strong> — modular, robotic,
-                customizable. But hard to overlay LABUBU-style soft tactile feel.
-              </li>
-              <li>
-                <strong>Hidden joints (Tech Rider FLEXDOLL look)</strong> — cloth
-                costume covers everything, smooth tactile, posable from underneath.
-                Matches the snowboard / per-sport uniform direction.
-              </li>
-              <li>
-                <strong>Hybrid (proposed)</strong> — Dummy 13 joint mechanism
-                internally, fabric uniform on top (covers most joints), face + hands
-                exposed in silicone. Best of both worlds — must confirm with factory
-                if mechanically feasible at our cost target.
-              </li>
+            <p className="text-paper/85 leading-relaxed mb-4 text-[13px] text-paper/70">
+              Will confirm with Weijun &amp; Demeng whether this hybrid build is
+              mechanically feasible at our $15 FOB target. If silicone + fabric +
+              ball joints together blows the cost, options are:
+            </p>
+            <ul className="text-paper/85 leading-relaxed text-[13px] space-y-1.5 list-disc pl-5">
+              <li>simpler joint mechanism (fewer ball joints, hidden flexible joints inside fabric)</li>
+              <li>silicone face/hands only, hard plastic body under fabric</li>
+              <li>fabric on premium SKUs only, painted-on uniform on entry SKUs</li>
             </ul>
-            <p className="text-paper/85 leading-relaxed mt-4 text-[13px]">
-              Going to ask the OEM team to advise — Weijun &amp; Demeng both have
-              experience with both styles, they will know what works.
-            </p>
           </div>
         </div>
       </section>
