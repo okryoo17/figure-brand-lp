@@ -51,10 +51,10 @@
         "discipline": "Halfpipe / Olympics",
         "tagline": "Wall to wall is a whole language."
       },
-      "purist": {
-        "name": "The Backcountry Purist",
-        "discipline": "Splitboard / Touring",
-        "tagline": "Earns every line, leaves no trace."
+      "carver": {
+        "name": "The Alpine Carver",
+        "discipline": "Alpine / Carving / Race",
+        "tagline": "Steel edges. Cuts the earth."
       }
     }
   },

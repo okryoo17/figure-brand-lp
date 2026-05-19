@@ -3,7 +3,7 @@
 import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 
-const ARCHETYPES = ["powder", "park", "halfpipe", "purist"] as const;
+const ARCHETYPES = ["powder", "park", "halfpipe", "carver"] as const;
 
 type ArchetypeKey = (typeof ARCHETYPES)[number];
 
@@ -103,35 +103,19 @@ function Silhouette({ kind }: { kind: ArchetypeKey }) {
     );
   }
 
-  // PURIST — touring stance, board strapped on back (diagonal), doll standing tall.
+  // CARVER — alpine hard carve, doll heeled-over ~65° with speed lines.
   return (
     <svg viewBox="0 0 320 360" className="w-full h-full">
-      {/* splitboard slung behind from shoulder to opposite hip */}
-      <g fill={baseColor} opacity="0.9">
-        <path
-          d="M80 40 L240 30 L246 56 L86 66 Z"
-          transform="rotate(28 160 50)"
-        />
+      <g transform="translate(0 8) rotate(-62 160 220)">
+        <Doll />
       </g>
-      {/* doll standing with legs straight (override knee bends) */}
-      <g fill={baseColor}>
-        <circle cx="160" cy="40" r="6" />
-        <path d="M134 80 Q134 48 160 48 Q186 48 186 80 L186 92 L134 92 Z" />
-        <circle cx="160" cy="102" r="22" />
-        <rect x="136" y="96" width="48" height="9" rx="2" fill={dark} />
-        <path d="M130 124 Q160 132 190 124 L200 198 Q160 206 120 198 Z" />
-        {/* left arm gripping pack strap on chest */}
-        <path d="M132 138 Q120 160 128 188 L142 188 Q140 168 146 148 Z" />
-        {/* right arm hanging down naturally */}
-        <path d="M192 140 Q200 170 196 214 L184 214 Q180 178 178 144 Z" />
-        {/* legs straight standing */}
-        <path d="M134 198 L132 318 L156 318 L158 198 Z" />
-        <path d="M162 198 L164 318 L188 318 L188 198 Z" />
-        <rect x="124" y="316" width="38" height="14" rx="3" />
-        <rect x="158" y="316" width="38" height="14" rx="3" />
+      {/* speed lines trailing behind the carve */}
+      <g stroke={baseColor} strokeWidth="3" strokeLinecap="round" opacity="0.45" fill="none">
+        <path d="M16 270 L70 268" />
+        <path d="M22 290 L84 286" />
+        <path d="M14 310 L78 308" />
+        <path d="M30 330 L92 328" />
       </g>
-      {/* snow ground line */}
-      <path d="M30 348 L290 348" stroke={baseColor} strokeWidth="2" fill="none" opacity="0.4" />
     </svg>
   );
 }
