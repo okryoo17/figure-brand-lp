@@ -224,92 +224,45 @@ export default function InternalThreeDPage() {
         <p className="text-paper/80 max-w-3xl mb-6">
           VIMO Classic uses the patent&apos;s figure construction verbatim — the
           patent is freely usable as of 2017-05-17 (US maintenance-fee lapse).
-          The patent figures below define the body / limb / knee-tendon mechanism;
-          our additions in <span className="text-volt">electric green</span> are the
-          neck swivel and the two wrist swivels (rigid plastic, simple peg-in-socket).
+          All 10 sheets of the patent are reproduced below at 288 DPI (rendered
+          from the official PDF). Our additions in
+          <span className="text-volt"> electric green</span> are the neck swivel
+          and the two wrist swivels (rigid plastic, simple peg-in-socket).
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          <a href="/models/patent/fig_d00.png" target="_blank" rel="noopener" className="block">
-            <img
-              src="/models/patent/fig_d00.png"
-              alt="US6893318B2 Fig.1 + Fig.2 — figure on snowboard + exploded view"
-              className="w-full rounded-xl bg-paper p-3"
-            />
-            <div className="mt-2 font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">
-              FIG.1 / FIG.2
-            </div>
-            <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-paper/40">
-              figure standing · exploded limbs
-            </div>
-          </a>
-          <a href="/models/patent/fig_d03.png" target="_blank" rel="noopener" className="block">
-            <img
-              src="/models/patent/fig_d03.png"
-              alt="US6893318B2 Fig.3 — body exploded showing internal cavities and limb pegs"
-              className="w-full rounded-xl bg-paper p-3"
-            />
-            <div className="mt-2 font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">
-              FIG.3
-            </div>
-            <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-paper/40">
-              elastic torso + integrated shoulder / thigh
-            </div>
-          </a>
-          <a href="/models/patent/fig_d05.png" target="_blank" rel="noopener" className="block">
-            <img
-              src="/models/patent/fig_d05.png"
-              alt="US6893318B2 Fig.6 + Fig.7 — knee detail with pin (42), socket (44), dorsal elastic tendon (48)"
-              className="w-full rounded-xl bg-paper p-3"
-            />
-            <div className="mt-2 font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">
-              FIG.6 / FIG.7
-            </div>
-            <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-paper/40">
-              knee · pin 42 / socket 44 / tendon 48
-            </div>
-          </a>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
-          <a href="/models/patent/fig_d06.png" target="_blank" rel="noopener" className="block">
-            <img
-              src="/models/patent/fig_d06.png"
-              alt="US6893318B2 Fig.8-12 — joint construction sequence"
-              className="w-full rounded-xl bg-paper p-3"
-            />
-            <div className="mt-2 font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">
-              FIG.8–12
-            </div>
-            <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-paper/40">
-              snap-fit joint assembly steps
-            </div>
-          </a>
-          <a href="/models/patent/fig_d04.png" target="_blank" rel="noopener" className="block">
-            <img
-              src="/models/patent/fig_d04.png"
-              alt="US6893318B2 Fig.4 + Fig.5 — torso pieces"
-              className="w-full rounded-xl bg-paper p-3"
-            />
-            <div className="mt-2 font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">
-              FIG.4 / FIG.5
-            </div>
-            <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-paper/40">
-              torso · shoulder + thigh integration
-            </div>
-          </a>
-          <a href="/models/patent/fig_d09.png" target="_blank" rel="noopener" className="block">
-            <img
-              src="/models/patent/fig_d09.png"
-              alt="US6893318B2 Fig.17 — hand inserting into snowboard binding"
-              className="w-full rounded-xl bg-paper p-3"
-            />
-            <div className="mt-2 font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">
-              FIG.17
-            </div>
-            <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-paper/40">
-              hand insertion into binding
-            </div>
-          </a>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+          {[
+            { n: "00", label: "COVER",         sub: "title sheet · abstract · representative figure" },
+            { n: "01", label: "FIG.1",         sub: "figure standing on snowboard (riding stance)" },
+            { n: "02", label: "FIG.2",         sub: "figure with limbs spread · body / shoulder integration" },
+            { n: "03", label: "FIG.3",         sub: "body exploded · elastic torso interior" },
+            { n: "04", label: "FIG.4 / FIG.5", sub: "torso pieces · integrated shoulder + thigh" },
+            { n: "05", label: "FIG.6 / FIG.7", sub: "knee · pin 42 / socket 44 / tendon 48" },
+            { n: "06", label: "FIG.8 – 12",    sub: "snap-fit joint assembly sequence" },
+            { n: "07", label: "FIG.13 – 15",   sub: "elbow joint detail · pin + tendon" },
+            { n: "08", label: "FIG.16",        sub: "snowboard with both bindings" },
+            { n: "09", label: "FIG.17",        sub: "hand inserting into binding" },
+          ].map((f) => (
+            <a
+              key={f.n}
+              href={`/models/patent/fig_d${f.n}.png`}
+              target="_blank"
+              rel="noopener"
+              className="block"
+            >
+              <img
+                src={`/models/patent/fig_d${f.n}.png`}
+                alt={`US6893318B2 ${f.label} — ${f.sub}`}
+                className="w-full rounded-xl bg-paper p-2"
+                loading="lazy"
+              />
+              <div className="mt-2 font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">
+                {f.label}
+              </div>
+              <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-paper/40">
+                {f.sub}
+              </div>
+            </a>
+          ))}
         </div>
 
         <div className="mt-8 grid lg:grid-cols-2 gap-8">
