@@ -1,0 +1,80 @@
+name: Promote vimo-co.vercel.app to latest Production deploy
+
+# Vercel default behaviour pins vimo-co.vercel.app to whichever specific
+# deployment it was first `vercel alias set` to. The other system-managed
+# aliases (vimo-blond / vimo-git-main / vimo-okryoo17s) auto-follow new
+# production deployments, but the custom one does not.
+#
+# This workflow runs after every push to main, waits for Vercel to finish
+# building the matching commit, then re-aliases vimo-co.vercel.app to that
+# new deployment so the custom domain always serves the latest production.
+#
+# Required repo secret:
+#   VERCEL_TOKEN — Vercel API token with at least project deployment + alias
+#                   write permission on okryoo17s-projects/vimo. Create at
+#                   https://vercel.com/account/tokens (recommend 1y expiry).
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: vercel-alias-promote
+  cancel-in-progress: false
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      PROJECT_ID: prj_xLfaoHQJuJcKN70QYJHVK3eqANiW
+      TEAM_ID: team_Xuuaj7QlD4QO92wdErnz2p9Z
+      ALIAS_DOMAIN: vimo-co.vercel.app
+
+    steps:
+      - name: Wait for the production deployment matching this commit
+        id: wait
+        run: |
+          set -euo pipefail
+          if [ -z "${VERCEL_TOKEN:-}" ]; then
+            echo "::error::VERCEL_TOKEN secret is missing. Add it at https://github.com/${{ github.repository }}/settings/secrets/actions/new"
+            exit 1
+          fi
+          SHA="${{ github.sha }}"
+          echo "Waiting for Vercel production deploy for commit $SHA …"
+          for attempt in $(seq 1 40); do
+            sleep 12
+            RESP=$(curl -fsS \
+              -H "Authorization: Bearer $VERCEL_TOKEN" \
+              "https://api.vercel.com/v6/deployments?projectId=$PROJECT_ID&teamId=$TEAM_ID&state=READY&target=production&limit=10")
+            URL=$(echo "$RESP" | jq -r --arg sha "$SHA" '.deployments[] | select(.meta.githubCommitSha==$sha) | .url' | head -n1)
+            if [ -n "$URL" ] && [ "$URL" != "null" ]; then
+              echo "Found READY deploy: $URL"
+              echo "deploy_url=$URL" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "[attempt $attempt/40] not ready yet, retrying in 12s"
+          done
+          echo "::error::Timed out waiting for a READY production deploy for commit $SHA"
+          exit 1
+
+      - name: Promote alias to ${{ env.ALIAS_DOMAIN }}
+        run: |
+          set -euo pipefail
+          DEPLOY_URL="${{ steps.wait.outputs.deploy_url }}"
+          echo "Aliasing $DEPLOY_URL  →  $ALIAS_DOMAIN"
+          npx --yes vercel@latest alias set "$DEPLOY_URL" "$ALIAS_DOMAIN" --token "$VERCEL_TOKEN" --scope okryoo17s-projects
+
+      - name: Verify ${{ env.ALIAS_DOMAIN }} serves the new deploy
+        run: |
+          set -euo pipefail
+          for attempt in $(seq 1 10); do
+            sleep 3
+            DEPLOY_HEADER=$(curl -sI -m 10 "https://$ALIAS_DOMAIN/?cb=$RANDOM" | tr -d '\r' | grep -i '^x-vercel-id:' || true)
+            if [ -n "$DEPLOY_HEADER" ]; then
+              echo "Confirmed alias served: $DEPLOY_HEADER"
+              exit 0
+            fi
+          done
+          echo "::warning::Could not confirm alias header within 30s — alias was set but verification timed out"
