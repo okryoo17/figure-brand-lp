@@ -33,35 +33,38 @@ export default function InternalThreeDPage() {
               VIMO · INTERNAL · DESIGN REVIEW
             </div>
             <h1 className="font-display italic text-3xl lg:text-4xl text-paper mt-1">
-              3D Blockout — Main Figure
+              VIMO Classic — Patent-based Construction
             </h1>
           </div>
           <div className="font-mono text-[10px] tracking-[0.2em] uppercase text-paper/50">
-            v0.1 · 2026-05-19 · 1:12 · 125 mm
+            v0.2 · 2026-05-22 · 1:12 · 125 mm
           </div>
         </div>
       </header>
 
       <section className="mx-auto max-w-[1280px] px-6 lg:px-10 py-10">
         <p className="text-paper/80 max-w-3xl">
-          Reference spec sheet for the VIMO Main figure — 1:12 scale, 125 mm
-          total height, 14 articulated joints. Dimensions taken from a physical
-          measurement of the predecessor Tech Rider FLEXDOLL (Norway, c. 2010-2011)
-          on 2026-05-19. The 3D below is a procedural blockout carrying the
-          <em> correct dimensions, proportions, and joint positions</em>; the final
-          character sculpt and surface detailing are to be developed by the
-          factory&apos;s sculpting team from this reference plus the character art
-          (delivered separately).
+          VIMO <strong>Classic</strong> is the new main SKU — built directly on the
+          expired <strong>US6893318B2</strong> &ldquo;Flexible Figure&rdquo;
+          construction (Tech Rider FLEXDOLL, NO, 2001 / lapsed 2017-05-17 US
+          maintenance-fee non-payment), with two deliberate additions in rigid plastic:
+          a <strong>swivel neck joint</strong> and <strong>two swivel wrist
+          joints</strong>. Knees and elbows are <em>pre-bent</em> at the riding
+          stance and held by the patent&apos;s dorsal elastic tendon — they do not
+          freely articulate. Total active articulation: <strong>3 points</strong>.
+          Decision per Franz × Okamura 2026-05-22.
         </p>
         <div className="mt-6 max-w-3xl border-l-4 border-volt pl-5 py-3 bg-volt/[0.04]">
           <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-volt mb-2">
-            CONSTRUCTION SPEC
+            CONSTRUCTION SPEC — VIMO CLASSIC
           </div>
           <ul className="text-paper/85 text-[14px] leading-relaxed space-y-1.5">
-            <li>· <strong>Skeleton</strong>: Dummy 13 / T-13 style ball joints, 14 articulation points (image in §03.5)</li>
-            <li>· <strong>Body surface</strong>: silicone; face and hands exposed for grip/tactile feel</li>
-            <li>· <strong>Costume</strong>: real fabric uniforms varying by sport — snowboard puffer, baseball mesh, golf polo, soccer dry-mesh, surf rashguard. Uniform covers most joints during display, full articulation underneath.</li>
-            <li>· <strong>Self-standing</strong>: knees-bent riding stance (snowboard SKU), FLEXDOLL-style knee mechanism — US6893318B2 patent expired 2022-07-03</li>
+            <li>· <strong>Torso</strong>: resilient elastomer (silicone or TPE), integrated shoulder + thigh sections — per patent Fig.2 / 3</li>
+            <li>· <strong>Upper / lower limbs</strong>: rigid plastic (PA / POM / PVC), snap-fit pin-and-socket at knee and elbow — per Fig.6 / 7 / 8-12</li>
+            <li>· <strong>Pre-formed pose</strong>: knee and elbow held in riding-stance angle by dorsal <em>elastic tendon</em> (item 48) — self-standing on snowboard, no springs / no metal armature</li>
+            <li>· <strong>NEW · Neck joint</strong>: plastic swivel between head and torso — full head rotation, mild tilt</li>
+            <li>· <strong>NEW · Wrist joint (×2)</strong>: plastic swivel between forearm and hand piece — hand rotation for grab / brace</li>
+            <li>· <strong>Surface finish</strong>: silicone face + hands exposed for tactile feel; per-sport fabric uniform covers the body (snowboard puffer for SS26)</li>
           </ul>
         </div>
       </section>
@@ -82,10 +85,13 @@ export default function InternalThreeDPage() {
             </div>
             <div>
               <div className="h-[440px]">
-                <Figure3D src="/models/vimo_main_skeleton.glb" alt="VIMO skeleton construction" cameraOrbit="20deg 78deg auto" />
+                <Figure3D src="/models/vimo_main_skeleton.glb" alt="VIMO Classic internal construction" cameraOrbit="20deg 78deg auto" />
               </div>
               <div className="font-mono text-[10px] tracking-[0.2em] uppercase text-paper/60 mt-2">
-                SKELETON — silicone segments + 14 black ball joints
+                CONSTRUCTION — elastic torso + rigid limbs + 3 plastic joints
+              </div>
+              <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-paper/40 mt-1">
+                ⚠ skeleton GLB still showing v0.1 14-joint blockout · patent-based regen pending
               </div>
             </div>
           </div>
@@ -120,9 +126,11 @@ export default function InternalThreeDPage() {
               <Spec k="Head Ø" v="22 mm" />
               <Spec k="Snowboard L × W × T" v="140 × 35 × 6 mm" />
               <Spec k="Goggles W × H" v="17 × 6 mm" />
-              <Spec k="Articulation" v="14 joints, independent" />
-              <Spec k="Body material" v="silicone (per Franz 2026-05-19)" />
-              <Spec k="Costume fabric" v="per-sport tactile (snowboard: puffer)" />
+              <Spec k="Articulation" v="3 active (neck + 2 wrists)" />
+              <Spec k="Knee / elbow" v="pre-bent, elastic tendon (patent)" />
+              <Spec k="Torso material" v="elastomer (silicone / TPE)" />
+              <Spec k="Limb material" v="rigid plastic (PA / POM / PVC)" />
+              <Spec k="Costume fabric" v="per-sport (snowboard: puffer)" />
             </div>
           </div>
         </div>
@@ -143,12 +151,12 @@ export default function InternalThreeDPage() {
         </div>
 
         <div className="font-mono text-[9px] tracking-[0.25em] uppercase text-paper/50 mt-2 mb-3">
-          SKELETON — silicone segments + 14 black ball joints
+          CONSTRUCTION — elastomer torso + rigid limbs + 3 plastic swivels (legacy v0.1 skeleton GLB shown — patent-based regen pending)
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
-          <DL href="/models/vimo_main_skeleton.stl" label="SKELETON · STL" sub="binary mesh · ~9 MB · construction reference" />
-          <DL href="/models/vimo_main_skeleton.obj" label="SKELETON · OBJ" sub="wavefront · ~12 MB · construction reference" />
-          <DL href="/models/vimo_main_skeleton.glb" label="SKELETON · GLB" sub="web 3D · ~6 MB · viewer asset" />
+          <DL href="/models/vimo_main_skeleton.stl" label="SKELETON · STL" sub="v0.1 14-pt blockout · regen pending" />
+          <DL href="/models/vimo_main_skeleton.obj" label="SKELETON · OBJ" sub="v0.1 14-pt blockout · regen pending" />
+          <DL href="/models/vimo_main_skeleton.glb" label="SKELETON · GLB" sub="v0.1 14-pt blockout · regen pending" />
         </div>
 
         <div className="font-mono text-[9px] tracking-[0.25em] uppercase text-paper/50 mt-2 mb-3">
@@ -157,7 +165,7 @@ export default function InternalThreeDPage() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
           <DL href="/models/vimo_main_dimensions.pdf" label="DIMENSIONS PDF" sub="front + side · all mm" />
           <DL href="/models/vimo_main_dimensions.png" label="DIMENSIONS PNG" sub="raster version" />
-          <DL href="/models/vimo_main_joints.csv"   label="JOINTS CSV"     sub="14 articulation points (x,y,z mm)" />
+          <DL href="/models/vimo_main_joints.csv"   label="JOINTS CSV"     sub="legacy v0.1 — 14-point blockout reference" />
           <DL href="/models/dimensions_extracted.md" label="SPEC SHEET"     sub="full body proportion notes" />
           <DL href="/models/vimo_mini.glb"          label="MINI CHARM GLB" sub="1:24 · 62 mm · charm version" />
         </div>
@@ -211,39 +219,120 @@ export default function InternalThreeDPage() {
 
       <section className="mx-auto max-w-[1280px] px-6 lg:px-10 py-10">
         <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-volt mb-4">
-          03.5 · JOINT REFERENCE — sent by Franz 2026-05-19
+          03.5 · PATENT STRUCTURE — US6893318B2 (Søviknes / Sætveit, 2001 · lapsed 2017)
         </div>
-        <div className="grid lg:grid-cols-2 gap-8 items-start">
-          <a href="/models/joint_reference.jpeg" target="_blank" rel="noopener">
+        <p className="text-paper/80 max-w-3xl mb-6">
+          VIMO Classic uses the patent&apos;s figure construction verbatim — the
+          patent is freely usable as of 2017-05-17 (US maintenance-fee lapse).
+          The patent figures below define the body / limb / knee-tendon mechanism;
+          our additions in <span className="text-volt">electric green</span> are the
+          neck swivel and the two wrist swivels (rigid plastic, simple peg-in-socket).
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <a href="/models/patent/fig_d00.png" target="_blank" rel="noopener" className="block">
             <img
-              src="/models/joint_reference.jpeg"
-              alt="Joint reference - Dummy 13 / T-13 style articulated figure"
-              className="w-full rounded-2xl bg-paper/5"
+              src="/models/patent/fig_d00.png"
+              alt="US6893318B2 Fig.1 + Fig.2 — figure on snowboard + exploded view"
+              className="w-full rounded-xl bg-paper p-3"
             />
+            <div className="mt-2 font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">
+              FIG.1 / FIG.2
+            </div>
+            <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-paper/40">
+              figure standing · exploded limbs
+            </div>
           </a>
-          <div>
-            <p className="text-paper/85 leading-relaxed mb-4">
-              The reference Franz shared is a <strong>&ldquo;Dummy 13 / T-13&rdquo;</strong> style
-              3D-printable articulated figure — exposed black ball joints at every
-              articulation point (neck, shoulder, elbow, wrist, waist, hip, knee,
-              ankle), with segmented body panels and interchangeable hand pieces.
-            </p>
-            <p className="text-paper/85 leading-relaxed mb-4">
-              <strong>Working assumption</strong>: this Dummy 13 joint mechanism is
-              the <em>structural skeleton</em>, and the per-sport real-fabric uniform
-              (snowboard puffer, baseball mesh, etc.) sits on top — covering most of
-              the joints during display, but allowing full articulation underneath.
-              Face and hands stay exposed in silicone for the tactile face/grip feel.
-            </p>
-            <p className="text-paper/85 leading-relaxed mb-4 text-[13px] text-paper/70">
-              Will confirm with Weijun &amp; Demeng whether this hybrid build is
-              mechanically feasible at our $15 FOB target. If silicone + fabric +
-              ball joints together blows the cost, options are:
-            </p>
-            <ul className="text-paper/85 leading-relaxed text-[13px] space-y-1.5 list-disc pl-5">
-              <li>simpler joint mechanism (fewer ball joints, hidden flexible joints inside fabric)</li>
-              <li>silicone face/hands only, hard plastic body under fabric</li>
-              <li>fabric on premium SKUs only, painted-on uniform on entry SKUs</li>
+          <a href="/models/patent/fig_d03.png" target="_blank" rel="noopener" className="block">
+            <img
+              src="/models/patent/fig_d03.png"
+              alt="US6893318B2 Fig.3 — body exploded showing internal cavities and limb pegs"
+              className="w-full rounded-xl bg-paper p-3"
+            />
+            <div className="mt-2 font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">
+              FIG.3
+            </div>
+            <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-paper/40">
+              elastic torso + integrated shoulder / thigh
+            </div>
+          </a>
+          <a href="/models/patent/fig_d05.png" target="_blank" rel="noopener" className="block">
+            <img
+              src="/models/patent/fig_d05.png"
+              alt="US6893318B2 Fig.6 + Fig.7 — knee detail with pin (42), socket (44), dorsal elastic tendon (48)"
+              className="w-full rounded-xl bg-paper p-3"
+            />
+            <div className="mt-2 font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">
+              FIG.6 / FIG.7
+            </div>
+            <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-paper/40">
+              knee · pin 42 / socket 44 / tendon 48
+            </div>
+          </a>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
+          <a href="/models/patent/fig_d06.png" target="_blank" rel="noopener" className="block">
+            <img
+              src="/models/patent/fig_d06.png"
+              alt="US6893318B2 Fig.8-12 — joint construction sequence"
+              className="w-full rounded-xl bg-paper p-3"
+            />
+            <div className="mt-2 font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">
+              FIG.8–12
+            </div>
+            <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-paper/40">
+              snap-fit joint assembly steps
+            </div>
+          </a>
+          <a href="/models/patent/fig_d04.png" target="_blank" rel="noopener" className="block">
+            <img
+              src="/models/patent/fig_d04.png"
+              alt="US6893318B2 Fig.4 + Fig.5 — torso pieces"
+              className="w-full rounded-xl bg-paper p-3"
+            />
+            <div className="mt-2 font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">
+              FIG.4 / FIG.5
+            </div>
+            <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-paper/40">
+              torso · shoulder + thigh integration
+            </div>
+          </a>
+          <a href="/models/patent/fig_d09.png" target="_blank" rel="noopener" className="block">
+            <img
+              src="/models/patent/fig_d09.png"
+              alt="US6893318B2 Fig.17 — hand inserting into snowboard binding"
+              className="w-full rounded-xl bg-paper p-3"
+            />
+            <div className="mt-2 font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">
+              FIG.17
+            </div>
+            <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-paper/40">
+              hand insertion into binding
+            </div>
+          </a>
+        </div>
+
+        <div className="mt-8 grid lg:grid-cols-2 gap-8">
+          <div className="bg-paper/[0.03] border border-volt/40 rounded-2xl p-6">
+            <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-volt mb-3">
+              VIMO additions over the patent
+            </div>
+            <ul className="text-paper/85 leading-relaxed text-[14px] space-y-2 list-disc pl-5">
+              <li><strong>Neck swivel</strong>: rigid plastic peg from torso top into head socket. Free 360° rotation, ±10° tilt. Looks toward the line of travel.</li>
+              <li><strong>Wrist swivel (×2)</strong>: rigid plastic peg between forearm-end and hand piece. Free rotation so the hand can grab the board (Fig.17) or brace against the slope.</li>
+              <li>Both joints use the same peg-and-socket family used at knee / elbow in the patent — the moulding tooling and assembly step are <em>identical</em>; only the elastic tendon is omitted (no pre-bend at neck / wrist).</li>
+            </ul>
+          </div>
+          <div className="bg-paper/[0.03] border border-paper/15 rounded-2xl p-6">
+            <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-flare mb-3">
+              Why this build (vs. 14-joint Dummy-13)
+            </div>
+            <ul className="text-paper/80 leading-relaxed text-[13px] space-y-2 list-disc pl-5">
+              <li>Self-standing riding stance out of the box — no posing skill required by the buyer.</li>
+              <li>Patent-proven mechanical robustness — Tech Rider shipped this for ~15 years.</li>
+              <li>Only 3 sliding interfaces → far lower QC failure rate than 14 ball-joints.</li>
+              <li>Lower BOM (single elastomer body + 4 rigid limbs + 3 plastic peg joints) → hits the USD 15 FOB target with room.</li>
+              <li>Patent expired (2017-05-17, US) — usable without licensing or royalty.</li>
             </ul>
           </div>
         </div>
@@ -251,14 +340,14 @@ export default function InternalThreeDPage() {
 
       <section className="mx-auto max-w-[1280px] px-6 lg:px-10 py-10">
         <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-flare mb-4">
-          04 · REFERENCE — Tech Rider FLEXDOLL (predecessor)
+          04 · REFERENCE — Tech Rider FLEXDOLL (predecessor in hand)
         </div>
         <p className="text-paper/70 max-w-3xl mb-6">
-          Source dimensions taken from a physical Tech Rider FLEXDOLL sample
-          (Norway, c. 2010-2011). The FLEXDOLL self-standing knee mechanism patent
-          (US6893318B2 / EP1417010B1 / JP4116538B2) expired on 2022-07-03 — the
-          technique is now freely usable. The character sculpt is original; we are
-          not licensing the Terje likeness.
+          Physical Tech Rider FLEXDOLL sample (Norway, c. 2010-2011) used as the
+          dimensional reference. The FLEXDOLL self-standing knee mechanism patent
+          (US6893318B2 / EP1417010B1 / JP4116538B2) lapsed 2017-05-17 (US,
+          maintenance-fee non-payment). The character sculpt is original; the
+          Terje likeness is not licensed.
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
           {[1, 2, 3, 4, 5, 6, 7, 8].map((n) => (

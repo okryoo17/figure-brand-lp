@@ -54,7 +54,7 @@ export function Technology() {
             className="relative aspect-[4/5] max-w-md mx-auto"
           >
             {/* Stylized figure schematic */}
-            <svg viewBox="0 0 400 500" className="w-full h-full">
+            <svg viewBox="-40 0 500 510" className="w-full h-full" overflow="visible">
               {/* Outer mark */}
               <text
                 x="20"
@@ -65,7 +65,7 @@ export function Technology() {
                 fill="var(--color-volt)"
                 opacity="0.8"
               >
-                FLEX—JOINT MECH.
+                FLEX—KNEE MECH.
               </text>
               <text
                 x="380"
@@ -77,7 +77,7 @@ export function Technology() {
                 fill="var(--color-paper)"
                 opacity="0.4"
               >
-                R-01
+                US6893318B2
               </text>
 
               {/* Figure schematic */}
@@ -106,67 +106,92 @@ export function Technology() {
                 <rect x="120" y="455" width="170" height="14" rx="7" fill="var(--color-volt)" stroke="none" />
               </g>
 
-              {/* Joint markers */}
+              {/* Active swivel joints (neck + 2 wrists) — VOLT, prominent */}
               {[
-                [200, 170],
-                [142, 180],
-                [258, 180],
-                [118, 240],
-                [284, 240],
-                [146, 280],
-                [252, 280],
-                [166, 290],
-                [234, 290],
-                [156, 370],
-                [244, 370],
-                [170, 450],
-                [230, 450],
-                [200, 290],
+                [200, 170], // neck
+                [146, 280], // left wrist
+                [252, 280], // right wrist
               ].map(([x, y], i) => (
-                <g key={i}>
-                  <circle cx={x} cy={y} r="5" fill="var(--color-volt)" />
-                  <circle cx={x} cy={y} r="11" fill="none" stroke="var(--color-volt)" strokeWidth="0.8" opacity="0.5" />
+                <g key={`active-${i}`}>
+                  <circle cx={x} cy={y} r="6" fill="var(--color-volt)" />
+                  <circle cx={x} cy={y} r="13" fill="none" stroke="var(--color-volt)" strokeWidth="1.2" opacity="0.7" />
+                  <circle cx={x} cy={y} r="19" fill="none" stroke="var(--color-volt)" strokeWidth="0.6" opacity="0.35" />
+                </g>
+              ))}
+
+              {/* Pre-bent fixed pivots (knees + elbows) — FLARE, secondary */}
+              {[
+                [118, 240], // left elbow
+                [284, 240], // right elbow
+                [156, 370], // left knee
+                [244, 370], // right knee
+              ].map(([x, y], i) => (
+                <g key={`fixed-${i}`}>
+                  <circle cx={x} cy={y} r="4" fill="none" stroke="var(--color-flare)" strokeWidth="1.4" />
+                  <circle cx={x} cy={y} r="2" fill="var(--color-flare)" />
                 </g>
               ))}
 
               {/* Annotations */}
-              <line x1="220" y1="330" x2="320" y2="330" stroke="var(--color-flare)" strokeDasharray="2 4" />
+              <line x1="260" y1="370" x2="340" y2="370" stroke="var(--color-flare)" strokeDasharray="2 4" />
               <text
-                x="324"
-                y="334"
+                x="344"
+                y="374"
                 fontFamily="var(--font-mono)"
                 fontSize="10"
                 letterSpacing="2"
                 fill="var(--color-flare)"
               >
+                PRE-BENT
+              </text>
+              <text
+                x="344"
+                y="386"
+                fontFamily="var(--font-mono)"
+                fontSize="9"
+                letterSpacing="1.5"
+                fill="var(--color-flare)"
+                opacity="0.75"
+              >
                 ELASTIC TENDON
               </text>
 
-              <line x1="160" y1="180" x2="60" y2="180" stroke="var(--color-paper)" strokeOpacity="0.4" strokeDasharray="2 4" />
+              <line x1="200" y1="156" x2="200" y2="120" stroke="var(--color-volt)" strokeDasharray="2 4" />
+              <text
+                x="200"
+                y="112"
+                textAnchor="middle"
+                fontFamily="var(--font-mono)"
+                fontSize="10"
+                letterSpacing="2"
+                fill="var(--color-volt)"
+              >
+                NECK SWIVEL
+              </text>
+
+              <line x1="146" y1="284" x2="60" y2="300" stroke="var(--color-volt)" strokeDasharray="2 4" />
               <text
                 x="58"
-                y="184"
+                y="304"
                 textAnchor="end"
                 fontFamily="var(--font-mono)"
                 fontSize="10"
                 letterSpacing="2"
-                fill="var(--color-paper)"
-                opacity="0.6"
+                fill="var(--color-volt)"
               >
-                SHOULDER
+                WRIST × 2
               </text>
 
-              <line x1="270" y1="180" x2="350" y2="180" stroke="var(--color-paper)" strokeOpacity="0.4" strokeDasharray="2 4" />
+              <line x1="252" y1="284" x2="350" y2="260" stroke="var(--color-volt)" strokeDasharray="2 4" opacity="0" />
               <text
                 x="354"
-                y="184"
+                y="264"
                 fontFamily="var(--font-mono)"
                 fontSize="10"
                 letterSpacing="2"
-                fill="var(--color-paper)"
-                opacity="0.6"
+                fill="var(--color-volt)"
               >
-                14 PTS
+                3 ACTIVE
               </text>
             </svg>
           </motion.div>

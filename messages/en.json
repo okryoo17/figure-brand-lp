@@ -15,7 +15,7 @@
     "ctaPrimary": "Get the drop alert",
     "ctaSecondary": "Read the manifesto",
     "tagBuild": "BUILD No. 0001",
-    "tagMech": "FLEX-JOINT MECH. / 14 PTS"
+    "tagMech": "FLEX-KNEE MECH. / 3 SWIVELS"
   },
   "marquee": {
     "items": "POSABLE / CARRYABLE / COLLECTIBLE / POSABLE / CARRYABLE / COLLECTIBLE / "
@@ -84,21 +84,21 @@
   "tech": {
     "index": "04",
     "label": "TECHNOLOGY",
-    "kicker": "Self-standing. Truly posable.",
-    "title": "Fourteen articulated joints. A tendon at every knee. Stands like it means it.",
-    "body": "Each figure is engineered around a fully articulated armature with elastic tension at the knees. Cloth costumes, real boards, sculpted heads, 10-15 stable poses per figure — engineered for study, designed for display.",
+    "kicker": "Stands in riding stance. Out of the box.",
+    "title": "A tendon at every knee. Neck and wrists swivel. Stands like it means it.",
+    "body": "VIMO Classic is built directly on the expired US6893318B2 patent (Tech Rider FLEXDOLL) construction. Knees and elbows are pre-bent into the riding stance and held by a dorsal elastic tendon — the figure stands itself the moment you open the box. The only active joints are the new ones we added in rigid plastic: a swivel neck and two swivel wrists. No posing skill required.",
     "specs": {
-      "joints": "Articulated joints",
-      "poses": "Stable poses",
-      "scale": "1:6 scale",
+      "joints": "Active joints",
+      "poses": "Locked stance",
+      "scale": "Scale",
       "height": "Main figure",
       "mini": "Mini charm"
     },
     "values": {
-      "jointsVal": "14",
-      "posesVal": "10-15",
-      "scaleVal": "1:6",
-      "heightVal": "12-13 cm",
+      "jointsVal": "neck + 2 wrists",
+      "posesVal": "riding, self-standing",
+      "scaleVal": "1:12",
+      "heightVal": "12.5 cm",
       "miniVal": "5-7 cm"
     }
   },
@@ -204,7 +204,7 @@
       },
       "minicharm": {
         "q": "What's the difference between the main figure and the mini charm?",
-        "a": "The main figure (12-13 cm, ~USD 60) is the full posable practice piece with cloth costume, accessories, and 14 articulated joints. The mini charm (5-7 cm, ~USD 22) is a simplified, attachable version designed to live on your bag or desk. Same character, two scales."
+        "a": "The main figure is VIMO Classic (12.5 cm, ~USD 60): knees and elbows are pre-bent into the riding stance and held by an elastic tendon (per the expired US6893318B2 patent), with three active swivel joints we added — neck and two wrists. Real fabric costume + real snowboard, self-standing out of the box. The mini charm (5-7 cm, ~USD 22) is a static, simplified attachable for your bag or desk. Same character, two scales."
       },
       "shipping": {
         "q": "Will you ship internationally?",
