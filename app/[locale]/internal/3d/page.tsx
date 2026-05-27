@@ -37,7 +37,7 @@ export default function InternalThreeDPage() {
             </h1>
           </div>
           <div className="font-mono text-[10px] tracking-[0.2em] uppercase text-paper/50">
-            v0.3 · 2026-05-27 · 1:12 · 125 mm
+            v0.4 · 2026-05-27 · 1:12 · 125 mm
           </div>
         </div>
       </header>
@@ -49,12 +49,16 @@ export default function InternalThreeDPage() {
           construction (Tech Rider FLEXDOLL, NO, 2001 / lapsed 2017-05-17 US
           maintenance-fee non-payment), with <strong>four deliberate additions</strong>
           in rigid plastic: a <strong>swivel neck joint</strong>, <strong>two
-          wrist swivels</strong>, <strong>two elbow ball joints</strong>, and{" "}
-          <strong>two knee ball joints</strong>. Shoulders, hips and ankles are{" "}
-          <em>pre-formed</em> in the riding stance and held rigid — they do not
-          articulate. Total active articulation: <strong>7 points</strong>.
-          Decision per Franz × Okamura 2026-05-27 (revised from v0.2 3-joint
-          spec based on Weijun structural feedback 2026-05-26).
+          wrist swivels</strong>, <strong>two elbow hinge joints</strong>, and{" "}
+          <strong>two knee hinge joints</strong>. Knee and elbow hinges are
+          single-axis flexion in the natural anatomical direction with an
+          integral stop ring preventing hyperextension. Shoulders, hips and
+          ankles are <em>pre-formed</em> in the riding stance and held rigid —
+          they do not articulate. Total active articulation:{" "}
+          <strong>7 points</strong>. Decision per Franz × Okamura 2026-05-27
+          (revised from v0.3 ball-joint version based on Weijun designer
+          feedback 2026-05-27 — ball joints at knee/elbow would allow
+          non-anatomical poses).
         </p>
         <div className="mt-6 max-w-3xl border-l-4 border-volt pl-5 py-3 bg-volt/[0.04]">
           <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-volt mb-2">
@@ -62,12 +66,12 @@ export default function InternalThreeDPage() {
           </div>
           <ul className="text-paper/85 text-[14px] leading-relaxed space-y-1.5">
             <li>· <strong>Torso</strong>: resilient elastomer (silicone or TPE), integrated shoulder + thigh sections — per patent Fig.2 / 3</li>
-            <li>· <strong>Upper / lower limbs</strong>: rigid plastic (PA / POM / PVC), connected through ball joints at elbow and knee — patent peg-and-socket family upgraded to ball articulation per Fig.6 / 7 / 8-12</li>
+            <li>· <strong>Upper / lower limbs</strong>: rigid plastic (PA / POM / PVC), connected through hinge joints at elbow and knee — patent peg-and-socket family upgraded to 1-axis hinge articulation per Fig.6 / 7 / 8-12</li>
             <li>· <strong>Pre-formed sections</strong>: shoulders, hips and ankles fixed in riding stance — figure self-stands on snowboard without metal armature</li>
             <li>· <strong>NEW · Neck joint</strong>: plastic swivel between head and torso — full head rotation, mild tilt</li>
             <li>· <strong>NEW · Wrist joint (×2)</strong>: plastic swivel between forearm and hand piece — hand rotation for grab / brace</li>
-            <li>· <strong>NEW · Elbow joint (×2)</strong>: plastic ball joint between upper and lower arm — multi-axis rotation for grab / brace poses</li>
-            <li>· <strong>NEW · Knee joint (×2)</strong>: plastic ball joint between upper and lower leg — multi-axis rotation for stance variation</li>
+            <li>· <strong>NEW · Elbow joint (×2)</strong>: plastic hinge joint between upper and lower arm — 1-axis flexion (anatomical direction) with stop ring, for grab / brace poses</li>
+            <li>· <strong>NEW · Knee joint (×2)</strong>: plastic hinge joint between upper and lower leg — 1-axis flexion (anatomical direction) with stop ring, for stance variation</li>
             <li>· <strong>Surface finish</strong>: silicone face + hands exposed for tactile feel; per-sport fabric uniform covers the body (snowboard puffer for SS26)</li>
           </ul>
         </div>
@@ -92,10 +96,10 @@ export default function InternalThreeDPage() {
                 <Figure3D src="/models/vimo_main_skeleton.glb" alt="VIMO Classic internal construction" cameraOrbit="20deg 78deg auto" />
               </div>
               <div className="font-mono text-[10px] tracking-[0.2em] uppercase text-paper/60 mt-2">
-                CONSTRUCTION — elastomer torso + rigid limbs + 7 plastic joints
+                CONSTRUCTION — elastomer torso + rigid limbs + 7 plastic joints (neck ball + 2 wrist swivel + 2 elbow hinge + 2 knee hinge)
               </div>
               <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-paper/40 mt-1">
-                ⚠ skeleton GLB still showing v0.1 14-joint blockout · 7-joint regen pending
+                ⚠ skeleton GLB still showing v0.1 14-joint blockout · 7-joint hinge regen pending
               </div>
             </div>
           </div>
@@ -130,7 +134,7 @@ export default function InternalThreeDPage() {
               <Spec k="Head Ø" v="22 mm" />
               <Spec k="Snowboard L × W × T" v="140 × 35 × 6 mm" />
               <Spec k="Goggles W × H" v="17 × 6 mm" />
-              <Spec k="Articulation" v="7 active (neck + 2 wrists + 2 elbows + 2 knees)" />
+              <Spec k="Articulation" v="7 active (neck ball + 2 wrist swivel + 2 elbow hinge + 2 knee hinge)" />
               <Spec k="Shoulders / hips / ankles" v="pre-formed, riding stance" />
               <Spec k="Torso material" v="elastomer (silicone / TPE)" />
               <Spec k="Limb material" v="rigid plastic (PA / POM / PVC)" />
@@ -155,7 +159,7 @@ export default function InternalThreeDPage() {
         </div>
 
         <div className="font-mono text-[9px] tracking-[0.25em] uppercase text-paper/50 mt-2 mb-3">
-          CONSTRUCTION — elastomer torso + rigid limbs + 7 plastic joints (legacy v0.1 skeleton GLB shown — 7-joint regen pending)
+          CONSTRUCTION — elastomer torso + rigid limbs + 7 plastic joints (neck ball + 2 wrist swivel + 2 elbow hinge + 2 knee hinge · legacy v0.1 skeleton GLB shown — 7-joint hinge regen pending)
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
           <DL href="/models/vimo_main_skeleton.stl" label="SKELETON · STL" sub="v0.1 14-pt blockout · regen pending" />
@@ -232,7 +236,8 @@ export default function InternalThreeDPage() {
           from the official PDF). Our additions in
           <span className="text-volt"> electric green</span> are the neck swivel,
           the two wrist swivels, and the upgrade of the knee and elbow
-          pin-and-socket joints into ball-joint articulation.
+          pin-and-socket joints into 1-axis hinge articulation (anatomical
+          direction with stop ring).
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
           {[
@@ -241,9 +246,9 @@ export default function InternalThreeDPage() {
             { n: "02", label: "FIG.2",         sub: "figure with limbs spread · body / shoulder integration" },
             { n: "03", label: "FIG.3",         sub: "body exploded · elastic torso interior" },
             { n: "04", label: "FIG.4 / FIG.5", sub: "torso pieces · integrated shoulder + thigh" },
-            { n: "05", label: "FIG.6 / FIG.7", sub: "knee · pin 42 / socket 44 → VIMO ball-joint upgrade" },
+            { n: "05", label: "FIG.6 / FIG.7", sub: "knee · pin 42 / socket 44 → VIMO hinge upgrade (1-axis)" },
             { n: "06", label: "FIG.8 – 12",    sub: "snap-fit joint assembly sequence" },
-            { n: "07", label: "FIG.13 – 15",   sub: "elbow joint detail → VIMO ball-joint upgrade" },
+            { n: "07", label: "FIG.13 – 15",   sub: "elbow joint detail → VIMO hinge upgrade (1-axis)" },
             { n: "08", label: "FIG.16",        sub: "snowboard with both bindings" },
             { n: "09", label: "FIG.17",        sub: "hand inserting into binding" },
           ].map((f) => (
@@ -278,9 +283,9 @@ export default function InternalThreeDPage() {
             <ul className="text-paper/85 leading-relaxed text-[14px] space-y-2 list-disc pl-5">
               <li><strong>Neck swivel</strong>: rigid plastic peg from torso top into head socket. Free 360° rotation, ±10° tilt. Looks toward the line of travel.</li>
               <li><strong>Wrist swivel (×2)</strong>: rigid plastic peg between forearm-end and hand piece. Free rotation so the hand can grab the board (Fig.17) or brace against the slope.</li>
-              <li><strong>Elbow ball joint (×2)</strong>: the patent&apos;s peg-and-socket at the elbow (Fig.13-15) upgraded to a ball joint — multi-axis rotation for grab and brace poses. The dorsal elastic tendon is no longer required at the elbow.</li>
-              <li><strong>Knee ball joint (×2)</strong>: the patent&apos;s peg-and-socket at the knee (Fig.6-12) upgraded to a ball joint — multi-axis rotation for stance variation. The dorsal elastic tendon is no longer required at the knee.</li>
-              <li>All four additions use the same moulding tooling family used at knee / elbow in the patent — the assembly step is structurally compatible; the elbow and knee upgrades convert pre-bent peg joints into freely articulating ball joints.</li>
+              <li><strong>Elbow hinge joint (×2)</strong>: the patent&apos;s peg-and-socket at the elbow (Fig.13-15) upgraded to a 1-axis hinge joint — anatomical flexion direction with integral stop ring preventing hyperextension. The dorsal elastic tendon is no longer required at the elbow.</li>
+              <li><strong>Knee hinge joint (×2)</strong>: the patent&apos;s peg-and-socket at the knee (Fig.6-12) upgraded to a 1-axis hinge joint — anatomical flexion direction with integral stop ring. The dorsal elastic tendon is no longer required at the knee.</li>
+              <li>All four additions use the same moulding tooling family used at knee / elbow in the patent — the assembly step is structurally compatible; the elbow and knee upgrades convert pre-bent peg joints into freely articulating 1-axis hinge joints (industry standard for knee/elbow in Mezco One:12 / Hot Toys class figures).</li>
             </ul>
           </div>
           <div className="bg-paper/[0.03] border border-paper/15 rounded-2xl p-6">
@@ -292,7 +297,7 @@ export default function InternalThreeDPage() {
               <li>Patent-derived geometry — Tech Rider shipped this base for ~15 years.</li>
               <li>Riding-stance default — shoulders / hips / ankles pre-formed, figure self-stands without buyer skill.</li>
               <li>Lower BOM (single elastomer body + 4 rigid limbs + 7 plastic joints) → competitive vs full 14-joint builds at our FOB target.</li>
-              <li>Patent expired (2017-05-17, US) — usable without licensing or royalty; ball-joint upgrade at elbow / knee is the VIMO-original layer for new IP filing.</li>
+              <li>Patent expired (2017-05-17, US) — usable without licensing or royalty; hinge-joint upgrade at elbow / knee is the VIMO-original layer for new IP filing.</li>
             </ul>
           </div>
         </div>
